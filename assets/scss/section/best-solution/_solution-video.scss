@@ -1,0 +1,84 @@
+/*--------------------------
+33.solution-video-area
+---------------------------*/
+.solution-video-area {
+  .video-thumbnail {
+    display: inline-block;
+    position: relative;
+    .play-btn {
+      display: inline-block;
+      position: absolute;
+      right: -5rem;
+      top: 15%;
+      width: 10rem;
+      height: 10rem;
+      line-height: 9rem;
+      text-align: center;
+      border-radius: 50%;
+      background: var(--primary-color-five);
+      font-size: 2.5rem;
+      color: var(--white);
+      box-sizing: border-box;
+      border: 5px solid var(--white);
+      transition: $transition;
+      &:hover {
+        color: var(--white);
+        background: var(--hover-color-five);
+        box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.1);
+      }
+    }
+    img {
+      overflow: hidden;
+      border-radius: 2rem;
+      box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.1);
+    }
+  }
+  .solution-info {
+    h2 {
+      font-family: $rubik;
+      font-size: 3.6rem;
+      line-height: 4.6rem;
+      font-weight: 700;
+      text-transform: capitalize;
+      color: #222222;
+    }
+    p {
+      margin-bottom: 1.5rem;
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+      color: #666666;
+    }
+    .primary-btn-five {
+      margin-top: 1rem;
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .solution-video-area .video-thumbnail .play-btn {
+    right: -20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .solution-video-area .solution-info h2 {
+    font-size: 2.8rem;
+    line-height: 3.8rem;
+  }
+  .solution-video-area .video-thumbnail .play-btn {
+    right: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .solution-video-area .video-thumbnail {
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 480px) {
+  .solution-video-area .solution-info h2 {
+    font-size: 2.8rem;
+    line-height: 3.8rem;
+  }
+  .solution-video-area .video-thumbnail .play-btn {
+    right: 20px;
+  } 
+}

@@ -1,0 +1,66 @@
+/*--------------------------
+service-six-area
+---------------------------*/
+.service-six-area {
+  .single-service {
+    padding: 4.5rem 3rem;
+    background: var(--white);
+    border-radius: 2rem;
+    box-shadow: 0px 25px 65px rgba(0, 0, 0, 0.05);
+    margin-bottom: 3rem;
+    .service-icon {
+      @include flex-position(flex, center, center);
+      margin-bottom: 3rem;
+      width: 5.6rem;
+      height: 5.6rem;
+      background: rgba(40, 150, 247, 0.39);
+      border-radius: .7rem;
+    }
+    h3 {
+      margin-bottom: 1rem;
+      font-size: 2.4rem;
+      font-weight: 700;
+      text-transform: capitalize;
+      color: #222222;
+    }
+    p {
+      font-size: 1.5rem;
+      line-height: 2.6rem;
+      font-weight: 400;
+      text-transform: capitalize;
+      color: #4A4E73;
+    }
+    a {
+      display: inline-block;
+      position: relative;
+      font-weight: 600;
+      text-transform: capitalize;
+      color: #333333;
+      transition: $transition;
+      &:before {
+        position: absolute;
+        font-family: "Font Awesome 5 free";
+        font-weight: 900;
+        content: "\f105";
+        left: calc(100% + 5px);
+        top: 1px;
+        color: currentColor;
+        transition: $transition;
+      }
+      &:hover {
+        &:before {
+          left: calc(100% + 10px);
+        }
+        color: var(--primary-color-five);
+      }
+    }
+  }
+}
+@media (max-width: 375px) {
+  .service-six-area .single-service h3 {
+    font-size: 2rem;
+  }
+  .service-six-area .single-service .service-icon {
+    margin-bottom: 1.5rem;
+  }
+}

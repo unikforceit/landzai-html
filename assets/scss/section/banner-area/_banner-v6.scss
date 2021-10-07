@@ -1,0 +1,59 @@
+/*--------------------------
+banner-area-v4
+---------------------------*/
+.banner-area-v6 {
+  padding: 22rem 0 6rem 0;
+  background: linear-gradient(180deg, rgba(56, 147, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%);
+  .banner-info {
+    .banner-title {
+      margin-bottom: 2rem;
+      font-family: $rubik;
+      font-size: 6.4rem;
+      line-height: 7.5rem;
+      font-weight: 700;
+      text-transform: capitalize;
+      color: #333333;
+    }
+    .banner-content {
+      margin-bottom: 3.5rem;
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 3rem;
+      color: #333333;
+    }
+  }
+  .banner-image {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .banner-area-v6 .banner-info .banner-title {
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+  .banner-area-v6 {
+    padding: 15rem 0 6rem 0;
+  }
+}
+@media (max-width: 991px) {
+  .banner-area-v6 {
+    padding: 6rem 0 6rem 0;
+  }
+  .banner-area-v6 .banner-info .banner-title {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+  .banner-area-v6 .banner-info {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .banner-area-v6 .banner-info .banner-title {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+}

@@ -1,0 +1,61 @@
+/*--------------------------
+25.fantastic-area
+---------------------------*/
+.fantastic-area {
+  overflow: hidden;
+  padding: 12.3rem 0;
+  .fantastic-info {
+    .vedio-btn {
+      margin-top: 3rem;
+    }
+  }
+  .fantastic-image {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    &:after {
+      position: absolute;
+      content: "";
+      width: 180px;
+      height: 155px;
+      background: url(../images/dot-red-shape.png) no-repeat;
+      right: -50px;
+      top: -50px;
+      z-index: -1;
+      animation: slideInUp 3s linear 1s infinite alternate both;
+    }
+    &:before {
+      position: absolute;
+      content: "";
+      width: 180px;
+      height: 155px;
+      background: url(../images/dot-blue-shape.png) no-repeat;
+      animation: slideInDown 3s linear 1s infinite alternate both;
+      left: -50px;
+      bottom: -50px;
+      z-index: -1;
+    }
+    .play-btn {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      margin: auto;
+      width: 9rem;
+      height: 9rem;
+      line-height: 9rem;
+      border-radius: 50%;
+      background: var(--secondary-color-two);
+      color: var(--white);
+      font-size: 3rem;
+      box-shadow: 0 0 0 1rem rgba(70, 67, 211, 0.4);
+      animation: pulse 3s linear infinite alternate;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 2.5rem;
+    }
+  }
+}

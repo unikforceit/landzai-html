@@ -1,0 +1,90 @@
+/*--------------------------
+testimonial-eight-area
+---------------------------*/  
+.testimonial-eight-area {
+  .testimonial-eihgt-slide {
+    position: relative;
+    border-bottom: 2px solid #F8F8F8;
+    margin-bottom: 30px;
+    padding-bottom: 3.5rem;
+    &:before {
+      position: absolute;
+      content: '';
+      left: -16px;
+      right: 0;
+      text-align: center;
+      top: 100%;
+      background: url('../images/testimonial-trange-bottom.png');
+      background-repeat: no-repeat;
+      width: 50px;
+      height: 10px;
+      margin: auto;
+    }
+    .single-slide {
+      .quote-icon {
+        margin-bottom: 2rem;
+      }
+      h3 {
+        margin-bottom: 1.5rem;
+        font-family: $PTSerif;
+        font-size: 1.8rem;
+        font-weight: 700;
+        text-transform: capitalize;
+        color: var(--black);
+      }
+      p {
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: #777777;
+        margin: 0;
+      }
+    }
+  }
+  .testimonial-image-wrape {
+    width: 150px;
+    margin: auto;
+    .single-slide {
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+    }
+  }
+  .testimonial-video {
+    position: relative;
+    .video-btn {
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      text-align: center;
+      margin: auto;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 5rem;
+      height: 5rem;
+      line-height: 5rem;
+      border-radius: 50%;
+      background: var(--white);
+      color: #CC9059;
+      box-shadow: 0 0 0 10px rgba(255, 255, 255, .3);
+      transition: $transition;
+      &:hover {
+        color: var(--white);
+        background: #CC9059;
+      }
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+
+@media (max-width: 991px) {
+  .testimonial-eight-area .testimonial-video {
+    margin-top: 3rem;
+  }
+}

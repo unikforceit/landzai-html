@@ -1,0 +1,65 @@
+/*--------------------------
+42.register-area
+---------------------------*/
+@import "./register_form";
+.register-area {
+  .register-info {
+    position: relative;
+    padding: 100px 50px 100px 180px;
+    background: #f8f9fc;
+    .register-left-image {
+      position: absolute;
+      left: -100px;
+      top: 0;
+    }
+    .brand-logo {
+      margin-bottom: 1.5rem;
+    }
+    h2 {
+      margin-bottom: 1.5rem;
+      font-family: $rubik;
+      font-size: 3.6rem;
+      line-height: 4.6rem;
+      font-weight: 700;
+      color: #222222;
+    }
+    p {
+      margin: 0;
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 2.8rem;
+      color: #666666;
+    }
+  }
+}
+
+@media (max-width: 1350px) {
+  .register-area .register-info {
+    z-index: 1;
+  }
+  .register-area .register-info .register-left-image {
+    left: -60px;
+    z-index: -1;
+  }
+}
+@media (max-width: 1250px) {
+  .register-area .register-info .register-left-image {
+    display: none;
+  }
+  .register-area .register-info {
+    padding: 100px 50px 100px 50px;
+  }
+}
+@media (max-width: 991px) {
+  .register-area .register-info {
+    display: none;
+  }
+}
+@media (max-width: 375px) {
+  .register-area .register-form-area .register-wrap {
+    padding: 3rem 1.5rem;
+  }
+  .register-area .register-info {
+    padding: 50px 30px 50px 30px;
+  }
+}

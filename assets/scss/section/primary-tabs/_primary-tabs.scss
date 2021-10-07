@@ -1,0 +1,95 @@
+/*--------------------------
+54.primary-tabs-area
+---------------------------*/
+.primary-tabs-area {
+     .tab-menu {
+          padding: 5rem 3rem;
+          background: #F8F9FC;
+          .nav-link {
+               margin-bottom: 5px;
+               padding: 1.3rem 2rem;
+               border: 1px solid #EEEEEE;
+               background: var(--white);
+               font-size: 1.6rem;
+               font-weight: 400;
+               text-transform: capitalize;
+               color: #222222;
+               transition: $transition;
+               &:hover {
+                    background: #2896F7;
+                    color: var(--white);
+               }
+               &:last-child {
+                    margin-bottom: 0;
+               }
+               &.active {
+                    background: #2896F7;
+                    color: var(--white);
+               }
+          }
+     }
+     .tab-content {
+          h3 {
+               margin-bottom: 1.5rem;
+               font-size: 2.4rem;
+               font-weight: 700;
+               text-transform: capitalize;
+               color: #222222
+          }
+          p {
+               font-size: 1.6rem;
+               line-height: 2.8rem;
+               font-weight: 400;
+               text-transform: capitalize;
+               color: #666666;
+          }
+          .feature-list {
+               padding-left: 2rem;
+               li {
+                    display: block;
+                    position: relative;
+                    list-style: none;
+                    margin-bottom: 1rem;
+                    padding-left: 3rem;
+                    font-size: 1.6rem;
+                    line-height: 2.8rem;
+                    color: #222222;
+                    &:last-child {
+                         margin-bottom: 0;
+                    }
+                    &::before {
+                         position: absolute;
+                         content: "\f105";
+                         font-family: "Font Awesome 5 free";
+                         font-weight: 900;
+                         left: 0;
+                         top: 0;
+                         color: currentColor;
+                    }
+               }
+          }
+     }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+     .primary-tabs-area .tab-menu {
+          padding: 3rem 2rem;
+     }
+     .primary-tabs-area .tab-menu .nav-link {
+          padding: 1.3rem 1rem;
+          font-size: 1.4rem;
+     }
+}
+@media (max-width: 767px) {
+     .primary-tabs-area .tab-menu {
+          margin-bottom: 5rem;
+     }
+}
+@media (max-width: 480px) {
+     .primary-tabs-area .tab-menu {
+          padding: 3rem 2rem;
+     }
+     .primary-tabs-area .tab-content h3 {
+          font-size: 2rem;
+     }
+}

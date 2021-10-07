@@ -1,0 +1,104 @@
+/*--------------------------
+10.service-area
+---------------------------*/
+.service-area {
+    background: var(--banner-bg-one);
+    position: relative;
+  z-index: 1;
+  .round-shape {
+    .round {
+      display: inline-block;
+      position: absolute;
+      width: 13px;
+      height: 13px;
+      line-height: 13px;
+      border-radius: 50%;
+      background: #f1d45c;
+      animation: round 3s linear infinite;
+      z-index: -1;
+      &:first-child {
+        top: 60%;
+        left: 6%;
+      }
+      &:nth-child(2) {
+        top: 150px;
+        left: 30%;
+      }
+      &:nth-child(3) {
+        bottom: 100px;
+        left: 50%;
+      }
+      &:nth-child(4) {
+        top: 150px;
+        right: 8%;
+      }
+      &:nth-child(5) {
+        bottom: 100px;
+        right: 10%;
+      }
+    }
+  }
+  .trangle-shape {
+    .trangle {
+      position: absolute;
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-top: 1.3rem solid var(--primary-color);
+      border-left: 1.3rem solid transparent;
+      border-right: 1.3rem solid transparent;
+      animation: trangle 5s linear 2s infinite alternate;
+      transform-origin: center;
+      z-index: -1;
+      &:first-child {
+        top: 150px;
+        left: 8%;
+      }
+      &:nth-child(2) {
+        bottom: 80px;
+        left: 6%;
+      }
+      &:nth-child(3) {
+        top: 100px;
+        left: 50%;
+      }
+      &:nth-child(4) {
+        bottom: 80px;
+        left: 42%;
+      }
+      &:nth-child(5) {
+        top: 50%;
+        right: 8%;
+      }
+    }
+  }
+    .single-service {
+        padding: 4.5rem;
+        border-radius: 1.2rem;
+        @include primary-box-shadow;
+        background: var(--white);
+        margin-bottom: 3rem;
+        .service-icon {
+            width: 8rem;
+            height: 8rem;
+            line-height: 8rem;
+            border-radius: 50%;
+            background: var(--bg-color-four);
+            margin: 0 auto;
+            i {
+                color: var(--primary-color);
+               &:before {
+                font-size: 35px;
+               }
+            }
+        }
+        .service-title {
+            margin-top: 2.5rem;
+            margin-bottom: 0;
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 2.6rem;
+            color: var(--color-one);
+        }
+    }
+}

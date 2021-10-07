@@ -1,0 +1,116 @@
+/*--------------------------
+banner-area-v4
+---------------------------*/
+.banner-area-v4 {
+  position: relative;
+  padding: 28rem 0 23rem 0;
+  background: linear-gradient(270deg, #FFFFFF 0%, #FFF6F4 98.75%);
+  overflow: hidden;
+  z-index: 1;
+  .ellipse1 {
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    animation: round 2s linear infinite alternate;
+    z-index: -1;
+  }
+  .ellipse2 {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    animation: trangle 7s linear 1.5s infinite ;
+    z-index: -1;
+  }
+  .ellipse3 {
+    position: absolute;
+    top: 55%;
+    left: 5%;
+    animation: round 5s linear infinite alternate;
+    z-index: -1;
+  }
+  .ellipse4 {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    animation: trangle 7s linear 2.5s infinite ;
+    z-index: -1;
+  }
+  .ellipse5 {
+    position: absolute;
+    top: 60%;
+    right: 5%;
+    animation: round 5s linear infinite alternate;
+    z-index: -1;
+  }
+  .ellipse6 {
+    position: absolute;
+    bottom: 10%;
+    left: 15%;
+    animation: trangle 7s linear 1s infinite ;
+    z-index: -1;
+  }
+  .ellipse7 {
+    position: absolute;
+    bottom: 10%;
+    right: 15%;
+    animation: trangle 7s linear 2s infinite ;
+    z-index: -1;
+  }
+  .banner-info {
+    h2 {
+      margin-bottom: 2rem;
+      font-family: $rubik;
+      font-size: 6rem;
+      line-height: 6.8rem;
+      font-weight: 700;
+      color: var(--color-one);
+      .color-one {
+        color: var(--primary-color-four);
+      }
+      .color-two {
+        color: var(--secondary-color-three);
+      }
+    }
+    p {
+      margin-bottom: 2.5rem;
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 2.6rem;
+      color: var(--bColor);
+    }
+    .banner-btn-list {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      li {
+        list-style: none;
+        margin-right: 2rem;
+        .primary-btn-four {
+          &.video-btn {
+            padding: 1.6rem 3.5rem;
+            border: 2px solid var(--primary-color-four);
+            background: transparent;
+            color: var(--primary-color-four);
+            transition: $transition;
+            i {
+              margin-right: 0.5rem;
+            }
+            &:hover {
+              color: var(--white);
+              background: var(--primary-color-four);
+            }
+          }
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .banner-image {
+    position: absolute;
+    right: -10rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

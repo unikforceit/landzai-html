@@ -1,0 +1,97 @@
+/*--------------------------
+9.work-area
+---------------------------*/
+.work-area {
+    .work-slide {
+        position: relative;
+        .slick-slide {
+            margin: 25px;
+        }
+        .slick-dots {
+            position: absolute;
+            left: -8rem;
+            top: 0;
+            li {
+                position: relative;
+                margin-bottom: 16.8rem;
+                &.slick-active {
+                    &:before {
+                        height:17rem ;
+                        background: var(--primary-color);
+                    }
+                    button {
+                        border: 10px solid var(--primary-color);
+                    }
+                }
+                &:last-child {
+                    &:after {
+                        display: none;
+                    }
+                    &:before {
+                        display: none;
+                    }
+                }
+                &:after {
+                    position: absolute;
+                    content: "";
+                    height:17rem ;
+                    width: 3px;
+                    background: var(--bg-color-three);
+                    top: 100%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+                &:before {
+                    position: absolute;
+                    content: "";
+                    height:0 ;
+                    width: 3px;
+                    background: var(--primary-color);
+                    top: 100%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    transition: $transition;
+                    z-index: 1;
+                }
+                button {
+                    width: 4rem ;
+                    height: 4rem;
+                    line-height: 4rem;
+                    border-radius: 50%;
+                    font-size: 0;
+                    background: var(--white);
+                    border: 10px solid var(--bg-color-three);
+                    transition: $transition;
+                }
+            }
+        }
+    }
+    .single-work {
+        margin-bottom: 30px;
+        padding: 3rem;
+        background: var(--white);
+        border-radius: 1.2rem;
+        @include primary-box-shadow-three;
+        h3 {
+            margin-bottom: 1rem;
+            font-family: $titlefont;
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: var(--color-one);
+            text-transform: capitalize;
+        }
+        p {
+            font-size: 1.5rem;
+            color: var(--text-color-two);
+            margin-bottom: 0;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+@media (max-width: 991px) {
+    .work-area .work-slide .slick-dots {
+        display: none !important;
+    }
+}

@@ -1,0 +1,250 @@
+/*--------------------------
+pricing-area-two
+---------------------------*/
+.pricing-area-four{
+  background: #F7F8FD;
+  .price-table-nav {
+    .nav-link {
+      padding: 4rem 3rem;
+      border-radius: 2rem;
+      background: var(--white);
+      box-shadow: 0px 25px 65px rgba(0, 0, 0, 0.05);
+      color: var(--black);
+      margin-bottom: 3rem;
+      transition: $transition;
+      &.active {
+        background: var(--primary-color-five);
+        .check-icon {
+          i {
+            background: var(--primary-color-four);
+            border: 1px solid var(--primary-color-four);
+            color: var(--white);
+          }
+        }
+        h4 {
+          color: var(--white);
+        }
+        span {
+          color: #f9f9f9;
+        }
+        .amount {
+          h2 {
+            color: var(--white);
+          }
+        }
+      }
+      &:hover {
+        background: var(--primary-color-five);
+        .check-icon {
+          i {
+            background: var(--primary-color-four);
+            border: 1px solid var(--primary-color-four);
+            color: var(--white);
+          }
+        }
+        h4 {
+          color: var(--white);
+        }
+        span {
+          color: #f9f9f9;
+        }
+        .amount {
+          h2 {
+            color: var(--white);
+          }
+        }
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .check-icon {
+        i {
+          @include flex-position(flex, center, center);
+          width: 3.5rem;
+          height: 3.5rem;
+          line-height: 3.5rem;
+          background: transparent;
+          border-radius: 50%;
+          border: 1px solid var(--primary-color-four);
+          color: var(--primary-color-four);
+          transition: $transition;
+        }
+      }
+      h4 {
+        font-family: $titlefont;;
+        font-size: 2.3rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: var(--color-one);
+        transition: $transition;
+      }
+      span {
+        font-family: $titlefont;;
+        font-size: 1.6rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        color: var(--bColor);
+        transition: $transition;
+      }
+      .amount {
+        h2 {
+          font-family: $titlefont;;
+          font-size: 3.6rem;
+          font-weight: 700;
+          text-transform: uppercase;
+          color: var(--color-one);
+          transition: $transition;
+        }
+      }
+    }
+  }
+  .price-info-box {
+    padding: 4rem 3.5rem;
+    background: var(--white);
+    border-radius: 2rem;
+    box-shadow: 0px 25px 65px rgba(0, 0, 0, 0.05);
+    .price-top {
+      position: relative;
+      border-bottom: 1px solid #dadada;
+      padding-bottom: 2.5rem;
+      h2 {
+        margin-bottom: 1rem;
+        font-family: $titlefont;;
+        font-size: 3.6rem;
+        font-weight: 700;
+        text-transform: capitalize;
+        color: var(--color-one);
+      }
+      span {
+        font-family: $titlefont;;
+        font-size: 1.8rem;
+        text-transform: capitalize;
+        font-weight: 400;
+        color: #a3a3a3;
+      }
+      .check-icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 4.6rem;
+        height: 4.6rem;
+        line-height: 4.6rem;
+        border-radius: 50%;
+        background: var(--primary-color-five);
+        text-align: center;
+        font-size: 2rem;
+        color: var(--white);
+      }
+    }
+    .price-body {
+      padding-top: 3.4rem;
+      ul {
+        margin: 0;
+        padding: 0;
+        li {
+          position: relative;
+          list-style: none;
+          margin-bottom: 2rem;
+          padding-left: 3.5rem;
+          font-family: $titlefont;;
+          font-size: 1.6rem;
+          font-weight: 400;
+          color: var(--bColor);
+          &:before {
+            position: absolute;
+            content: "\f00c";
+            font-family: "Font Awesome 5 free";
+            font-weight: 900;
+            left: 0;
+            top: 0;
+            color: #666666;
+          }
+        }
+      }
+      .primary-btn-two {
+        margin-top: 2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .pricing-area-four .price-info-box .price-top h2 {
+    font-size: 3rem;
+  }
+  .pricing-area-four .price-info-box .price-top .check-icon {
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    font-size: 1.6rem;
+  }
+  .pricing-area-four .price-table-nav .nav-link {
+    padding: 3rem 1.5rem;
+  }
+  .pricing-area-four .price-table-nav .nav-link .amount h2 {
+    font-size: 2.8rem;
+  }
+  .pricing-area-four .price-table-nav .nav-link .check-icon i {
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+  }
+  .pricing-area-four .price-table-nav .nav-link h4 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  .pricing-area-four .price-table-nav {
+    margin-bottom: 5rem;
+  }
+  .pricing-area-four .price-table-nav .nav-link h4 {
+    font-size: 1.8rem;
+  }
+  .pricing-area-four .price-table-nav .nav-link .amount h2 {
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 414px) {
+  .pricing-area-four .price-info-box .price-top span {
+    font-size: 1.5rem;
+  }
+  .pricing-area-four .price-info-box .price-body ul li {
+    margin-bottom: 1rem;
+    padding-left: 2.5rem;
+    font-size: 1.4rem;
+  }
+  .pricing-area-four .price-table-nav .nav-link span {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+  .pricing-area-four .price-table-nav .nav-link {
+    padding: 2rem 1rem;
+  }
+  .pricing-area-four .price-table-nav .nav-link .amount {
+    padding-left: 5px;
+  }
+  .pricing-area-four .price-table-nav .nav-link .amount h2 {
+    font-size: 2.4rem;
+  }
+  .pricing-area-four .price-info-box .price-top h2 {
+    font-size: 2.6rem;
+  }
+  .pricing-area-four .price-info-box {
+    padding: 3rem 2rem;
+  }
+  .pricing-area-four .price-info-box .price-top span {
+    font-size: 1.4rem;
+  }
+  .pricing-area-four .price-info-box .price-top .check-icon {
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1.2rem;
+  }
+  .pricing-area-four .price-table-nav .nav-link h4 {
+    font-size: 1.6rem;
+  }
+  .pricing-area-four .price-table-nav .nav-link .amount h2 {
+    font-size: 2rem;
+  }
+}

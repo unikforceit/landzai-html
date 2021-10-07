@@ -1,0 +1,68 @@
+/*--------------------------
+callto-action-two
+---------------------------*/
+.callto-action-two {
+  .callto-action-wrap {
+    position: relative;
+    padding: 0 6rem;
+    &:before {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 80%;
+      left: 0;
+      bottom: 0;
+      background: #3893FF;
+      box-shadow: 0px 0px 30px rgba(153, 137, 137, 0.15);
+      border-radius: 15px;
+      z-index: -2;
+    }
+    &:after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 75%;
+      left: 0;
+      bottom: 12px;
+      background: #EBF5FF;
+      border-radius: 15px;
+      transform: scale(.95);
+      z-index: -1;
+    }
+    .callto-action-info {
+      margin-top: 100px;
+      margin-bottom: 17px;
+    }
+    .callto-action-content {
+      width: 85%;
+    }
+  }
+}
+
+@media (max-width:991px) {
+  .callto-action-two .callto-action-wrap::before { 
+    height: 100%;
+  }
+  .callto-action-two .callto-action-wrap::after {
+    height: 100%;
+    bottom: 0;
+  }
+  .callto-action-two .callto-action-wrap .callto-action-info {
+    margin: 0;
+    padding: 6rem 0;
+  }
+  .callto-action-two .callto-action-wrap .callto-action-content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .callto-action-two .callto-action-wrap {
+    padding: 0 3rem;
+  }
+}
+@media (max-width: 375px) {
+  .callto-action-two .callto-action-wrap {
+    padding: 0 2rem;
+  }
+}

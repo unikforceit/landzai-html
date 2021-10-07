@@ -1,0 +1,27 @@
+/*--------------------------
+38.requirement-process
+---------------------------*/
+.requirement-process {
+  padding-top: 245px;
+  background: #f8f9fc;
+  .top-arrow {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+  .bottom-arrow {
+    margin-top: 1rem;
+  }
+  .single-requirement {
+    padding: 5rem 3rem;
+    background: var(--white);
+    border-radius: 1rem;
+    h3 {
+      margin: 0;
+      margin-top: 2.5rem;
+      font-size: 2.4rem;
+      font-weight: 700;
+      text-transform: capitalize;
+      color: var(--black);
+    }
+  }
+}

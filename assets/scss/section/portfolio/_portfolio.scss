@@ -1,0 +1,108 @@
+/*--------------------------
+29.portfolio-area
+---------------------------*/
+.portfolio-area {
+  background: url("../images/portfolio-area-bg.png") no-repeat center / cover;
+  .filtering-menu-area {
+    margin-bottom: 3rem;
+    .filtering-button {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      li {
+        margin-right: 3rem;
+        list-style: none;
+        font-size: 2rem;
+        font-weight: 500;
+        text-transform: capitalize;
+        color: var(--color-one);
+        transition: $transition;
+        cursor: pointer;
+        &:hover {
+          color: var(--primary-color-four);
+        }
+        &.active {
+          color: var(--primary-color-four);
+        }
+      }
+    }
+  }
+  .grid {
+    .single-portfolio {
+      position: relative;
+      margin-bottom: 11rem;
+      .portfolio-content {
+        position: absolute;
+        width: 90%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        bottom: -8rem;
+        z-index: 5;
+        background: var(--white);
+        padding: 2rem 2rem;
+        border-radius: 0.4rem;
+        h3 {
+          font-family: $rubik;
+          font-size: 1.8rem;
+          font-weight: 500;
+          color: var(--color-one);
+          a {
+            color: var(--color-one);
+            transition: $transition;
+            &:hover {
+              color: var(--primary-color-four);
+            }
+          }
+        }
+        p {
+          margin-bottom: 0.5rem;
+          font-size: 1.6rem;
+          line-height: 2.8rem;
+          color: var(--bColor);
+        }
+        .explore-btn {
+          font-size: 1.6rem;
+          font-weight: 400;
+          text-transform: capitalize;
+          color: var(--color-one);
+          transition: $transition;
+          i {
+            vertical-align: middle;
+            margin-left: 0.5rem;
+          }
+          &:hover {
+            color: var(--primary-color-four);
+          }
+        }
+      }
+    }
+    .single-image {
+      display: block;
+      position: relative;
+      border-radius: 1.5rem;
+      overflow: hidden;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: rgba(0, 0, 0, 0.15);
+        border-radius: 1.5rem;
+      }
+      &:hover {
+        img {
+          transform: scale(1.2) rotate(-7deg);
+        }
+      }
+      img {
+        width: 100%;
+        height: auto;
+        transition: $transition;
+      }
+    }
+  }
+}

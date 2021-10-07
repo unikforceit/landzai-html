@@ -1,0 +1,38 @@
+/*--------------------------
+about-six-area
+---------------------------*/
+.about-six-area {
+  .about-info {
+    p {
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+      color: #777777;
+    }
+  }
+  .blockquote-area {
+    border-left: 1px solid #D69F6D;
+    padding-left: 20px;
+    p {
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+      color: #777777;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .about-six-area .about-image{
+    text-align: center;
+  }
+  .about-six-area .about-info {
+    margin-top: 3rem;
+  }
+}
+
+
+@media (max-width: 375px) {
+  .about-six-area .primary-btn-seven{
+    margin-top: 15px;
+  }
+ 
+}

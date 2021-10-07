@@ -1,0 +1,65 @@
+/*--------------------------
+brand-two-area
+---------------------------*/
+.brand-two-area {
+  .brand-lisrt {
+    flex-flow: row wrap;
+    li {
+      width: 25%;
+      padding: 10px;
+      img {
+        transition: $transition;
+        cursor: pointer;
+        &:hover {
+          opacity: .6;
+        }
+      }
+    }
+  }
+  .brand-right-text {
+    h2 {
+      margin-top: -10px;
+      display: inline-block;
+      position: relative;
+      font-family: $PTSerif ;
+      font-size: 3.6rem;
+      font-weight: 700;
+      color: #3E3E3E;
+      z-index: 1;
+      &:before {
+        position: absolute;
+        content: '';
+        width: 220px;
+        height: 20px;
+        border-radius: 4px;
+        background: #E2D0BF;
+        z-index: -1;
+        bottom: 0;
+        right: 0;
+      }
+    }
+    p {
+      margin: 0;
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+      color: #777777;
+    }
+  }
+}
+
+
+@media (max-width: 1199px) {
+  .brand-two-area .brand-right-text h2 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 991px) {
+  .brand-two-area .brand-right-text  {
+    margin-top: 3rem;
+  }
+}
+@media (max-width: 375px) {
+  .brand-two-area .brand-lisrt li {
+    width: 33%;
+  }
+}

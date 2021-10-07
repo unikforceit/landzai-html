@@ -1,0 +1,90 @@
+/*--------------------------
+41.apply-form
+---------------------------*/
+.apply-form {
+  .form-title {
+    margin-bottom: 3rem;
+    font-family: $bodyFont;
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--black);
+  }
+  .form-group {
+    margin-bottom: 3rem;
+    .form-control {
+      height: 6rem;
+      border: 1px solid #cccccc;
+      border-radius: 0;
+      font-family: $bodyFont;
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: #666666;
+      padding: 2rem;
+    }
+    .coverletter {
+      height: 15rem;
+    }
+  }
+  .resume-group {
+    display: flex;
+    border: 1px solid #cccccc;
+    padding: 2rem;
+    .uplode-file {
+      width: 35%;
+      font-family: $bodyFont;
+      font-size: 1.6rem;
+      font-weight: 700;
+      text-transform: capitalize;
+      color: #222222;
+      margin-bottom: 0;
+    }
+    .form-control-file {
+      cursor: pointer;
+    }
+  }
+  .form-check {
+    .form-check-input {
+      margin-top: 0.5rem;
+      margin-left: -1.25rem;
+    }
+    .form-check-label {
+      padding-left: 1.5rem;
+      cursor: pointer;
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: #666666;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .apply-form .resume-group .uplode-file {
+    width: 45%;
+  }
+}
+@media (max-width: 991px) {
+  .apply-form .resume-group .uplode-file {
+    width: 55%;
+  }
+}
+@media (max-width: 767px) {
+  .apply-form .form-check .form-check-label {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 480px) {
+  .apply-form .resume-group .uplode-file {
+    width: 65%;
+  }
+}
+@media (max-width: 375px) {
+  .apply-form .resume-group {
+    padding: 2rem;
+    flex-direction: column;
+  }
+  .apply-form .resume-group .uplode-file {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}

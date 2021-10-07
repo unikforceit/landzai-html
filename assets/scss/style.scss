@@ -1,0 +1,207 @@
+/*
+------------- Table of content ----------------
+
+Template Name: Landzai Responsive  HTML5 Template
+Template URI: http://zainiktheme.com/html-templates/landzai
+Description: Landzai Responsive  HTML5 Template
+Author: zainiktheme
+Author URI: https://themeforest.net/user/zainiktheme/portfolio
+Version: 1.0
+
+---------------------- common content ----------
+1.body reset content
+2.header area
+3.footer-area
+4.button-area
+5.social-media-style
+6.banner-area
+7.brands-area
+8.section-title
+9.work-area
+10.service-area
+11.built-app-area 
+12.price-table-area
+13.faq-area
+14.app-screens-area
+15.testimonial-area
+16.blog-area
+17.preloader
+18.callto-action
+19.subbanner-area
+20.features-area
+21.about-area 
+22.support-area
+23.feedback-aera
+24.section-bg
+25.fantastic-area
+26.highlights-product
+27.spectiality-area
+28.product-area
+29.portfolio-area
+30.team-area
+31.breadcrumb-area
+32.best-solution-area
+33.solution-video-area
+34.choose-area
+35.strategy-area
+36.exceptional-area
+37.career-page
+38.requirement-process
+39.counter-area
+40.career-details
+41.apply-form
+42.register-area
+43.contact-area
+44.product-page
+45.single-product-page
+46.cart-page
+47.checkout-page
+48.pagination-area
+49.sidebar-area
+50.single-blog-page
+51.project-screenshot-area
+52.expertise-area
+53.qualified-doctors
+54.primary-tabs-area
+55.wishlist
+56.error-page
+*/
+// variable
+@import "variable/_variable.scss";
+
+// mixin
+@import "mixin/_mixin.scss";
+
+// body reset content
+@import "reset/_predefine.scss";
+
+// section style
+@import "section/header/header";
+@import "section/header/headerv2";
+@import "section/header/headerv3";
+@import "section/header/headerv4";
+@import "section/header/headerv5";
+@import "section/header/headerv6";
+@import "section/header/headerv7";
+@import "section/header/headerv8";
+@import "section/header/headerv9";
+@import "section/button/button";
+@import "section/footer/footer";
+@import "section/footer/footer-v2";
+@import "section/footer/footer-v3";
+@import "section/footer/footer-v4";
+@import "section/footer/footer-v5";
+@import "section/footer/footer-v6";
+@import "section/footer/footer-v7";
+@import "section/footer/footer-v8";
+@import "section/footer/footer-v9";
+@import "section/social-media/social-media";
+@import "section/banner-area/banner-area";
+@import "section/banner-area/banner-v2";
+@import "section/banner-area/banner-v3";
+@import "section/banner-area/banner-v4";
+@import "section/banner-area/banner-v5";
+@import "section/banner-area/banner-v6";
+@import "section/banner-area/banner-v7";
+@import "section/banner-area/banner-v8";
+@import "section/brands/brands";
+@import "section/brands/brands-v2";
+@import "section/brands/brands-v3";
+@import "section/section-title/section-title";
+@import "section/work-area/work-area";
+@import "section/work-area/work-area-v2";
+@import "section/service-area/service";
+@import "section/service-area/servicev2";
+@import "section/service-area/servicev3";
+@import "section/service-area/servicev4";
+@import "section/service-area/servicev5";
+@import "section/service-area/servicev6";
+@import "section/service-area/servicev7";
+@import "section/built-app/built-app";
+@import "section/price-table/price-table";
+@import "section/price-table/price-tablev2";
+@import "section/price-table/price-tablev3";
+@import "section/price-table/price-tablev4";
+@import "section/price-table/price-tablev5";
+@import "section/faq/faq";
+@import "section/faq/faqv2";
+@import "section/faq/faqv3";
+@import "section/faq/faqv4";
+@import "section/faq/faqv5";
+@import "section/app-screens/app-screens";
+@import "section/testimonial/testimonial";
+@import "section/testimonial/testimonialv2";
+@import "section/testimonial/testimonialv3";
+@import "section/testimonial/testimonialv4";
+@import "section/testimonial/testimonialv5";
+@import "section/testimonial/testimonialv6";
+@import "section/testimonial/testimonialv7";
+@import "section/testimonial/testimonialv8";
+@import "section/blog/blog";
+@import "section/blog/blogv2";
+@import "section/blog/blogv3";
+@import "section/blog/blogv4";
+@import "section/blog/blogv5";
+@import "section/blog/blogv6";
+@import "section/blog/blogv7";
+@import "section/preloader/preloader";
+@import "section/callto-action/callto-action";
+@import "section/callto-action/callto-action-v2";
+@import "section/callto-action/callto-action-v3";
+@import "section/subbanner/subbanner";
+@import "section/features/features";
+@import "section/features/features-v2";
+@import "section/features/features-v3";
+@import "section/features/features-v4";
+@import "section/features/features-v5";
+@import "section/about/about";
+@import "section/about/aboutv2";
+@import "section/about/aboutv3";
+@import "section/about/aboutv4";
+@import "section/about/aboutv5";
+@import "section/about/aboutv6";
+@import "section/about/aboutv7";
+@import "section/support/support";
+@import "section/feedback/feedback";
+@import "section/section-bg/section-bg";
+@import "section/fantastic/fantastic";
+@import "section/highlights-product/highlights-product";
+@import "section/spectiality/spectiality";
+@import "section/product/product-area";
+@import "section/portfolio/portfolio";
+@import "section/team/team-area";
+@import "section/breadcrumb/breadcrumb";
+@import "section/best-solution/best-solution";
+@import "section/best-solution/best-solution-v2";
+@import "section/best-solution/solution-video";
+@import "section/choose-area/choose";
+@import "section/choose-area/choose-v2";
+@import "section/strategy/strategy";
+@import "section/exceptional/exceptional";
+@import "section/requirement-process/requirement-process";
+@import "section/counter-area/counter-area";
+@import "section/apply-form/apply-form";
+@import "section/register/register";
+@import "section/register/register-v2";
+@import "section/register/register-v3";
+@import "section/contact/contact";
+@import "section/contact/contact-v2";
+@import "section/contact/contact-v3";
+@import "section/pagination/pagination";
+@import "section/sidebar/sidebar";
+@import "section/blog/single-blog-page";
+@import "section/project-screenshot/project-screenshot";
+@import "section/expertise/expertise";
+@import "section/qualified-doctors/qualified-doctors";
+@import "section/primary-tabs/primary-tabs";
+@import "section/error-page/error-page";
+
+@import "section/animations";
+// page style
+@import "pages/career-page/career-page";
+@import "pages/career-page/career-details";
+@import "pages/product/product-page";
+@import "pages/product/single-product-page";
+@import "pages/cart/cart";
+@import "pages/checkout/checkout";
+@import "pages/wishlist/wishlist";

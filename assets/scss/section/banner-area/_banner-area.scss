@@ -1,0 +1,121 @@
+/*--------------------------
+6.banner-area
+---------------------------*/
+.banner-area {
+  position: relative;
+  background: var(--banner-bg-one);
+  padding-top: 18rem;
+  z-index: 1;
+  .banner-text-wrap {
+    padding-bottom: 10rem;
+    .banner-title {
+      margin-bottom: 1rem;
+      font-family: $titlefont;
+      font-size: 5.6rem;
+      font-weight: 700;
+      color: var(--color-one);
+    }
+    .banner-content {
+      margin-bottom: 3rem;
+      font-size: 1.8rem;
+      font-weight: 400;
+      color: var(--bColor);
+      line-height: 2.8rem;
+    }
+    .button-lsit {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li {
+        display: inline-block;
+        margin-right: 3rem;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .primary-btn {
+    &.active {
+      color: var(--white);
+      &:before {
+        width: 100%;
+      }
+    }
+  }
+  .banner-img {
+    .phone-image {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      margin-bottom: -70px;
+    }
+  }
+  .round-shape {
+    .round {
+      display: inline-block;
+      position: absolute;
+      width: 13px;
+      height: 13px;
+      line-height: 13px;
+      border-radius: 50%;
+      background: #f1d45c;
+      animation: round 3s linear infinite;
+      z-index: -1;
+      &:first-child {
+        top: 60%;
+        left: 6%;
+      }
+      &:nth-child(2) {
+        top: 150px;
+        left: 30%;
+      }
+      &:nth-child(3) {
+        bottom: 100px;
+        left: 50%;
+      }
+      &:nth-child(4) {
+        top: 150px;
+        right: 8%;
+      }
+      &:nth-child(5) {
+        bottom: 100px;
+        right: 10%;
+      }
+    }
+  }
+  .trangle-shape {
+    .trangle {
+      position: absolute;
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-top: 1.3rem solid var(--primary-color);
+      border-left: 1.3rem solid transparent;
+      border-right: 1.3rem solid transparent;
+      animation: trangle 5s linear 2s infinite alternate;
+      transform-origin: center;
+      z-index: -1;
+      &:first-child {
+        top: 150px;
+        left: 8%;
+      }
+      &:nth-child(2) {
+        bottom: 80px;
+        left: 6%;
+      }
+      &:nth-child(3) {
+        top: 100px;
+        left: 50%;
+      }
+      &:nth-child(4) {
+        bottom: 80px;
+        left: 42%;
+      }
+      &:nth-child(5) {
+        top: 50%;
+        right: 8%;
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+/*--------------------------
+40.career-details
+---------------------------*/
+.career-details-left-sidebar {
+  .single-widget {
+    background: #f8f9fc;
+    padding: 3.5rem 3rem;
+    border-radius: 1rem;
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        display: flex;
+        list-style: none;
+        padding: 1.5rem 0;
+        border-bottom: 1px solid #eeeeee;
+        font-family: $bodyFont;
+        &:last-child {
+          border-bottom: 0;
+        }
+        span {
+          width: 50%;
+          font-size: 1.6rem;
+          font-weight: 400;
+          color: #666666;
+          text-transform: capitalize;
+        }
+        .quality-dsc {
+          font-weight: 700;
+          color: #222222;
+        }
+      }
+    }
+  }
+}
+.job-info-list {
+  .single-job-info {
+    margin-bottom: 4.5rem;
+    h2 {
+      margin-bottom: 2rem;
+      font-family: $bodyFont;
+      font-size: 2.4rem;
+      font-weight: 700;
+      text-transform: capitalize;
+      color: #222222;
+    }
+    p {
+      font-size: 1.6rem;
+      line-height: 2.8rem;
+      color: #666666;
+    }
+    ul {
+      margin: 0;
+      margin-top: 2.5rem;
+      padding: 0;
+      li {
+        display: block;
+        position: relative;
+        margin-bottom: 1.5rem;
+        list-style: none;
+        padding-left: 3rem;
+        font-family: $bodyFont;
+        font-size: 1.6rem;
+        &::before {
+          position: absolute;
+          content: "\f058";
+          font-family: "Font Awesome 5 free";
+          font-weight: 900;
+          left: 0;
+          top: 2px;
+          color: currentColor;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .career-details-left-sidebar .single-widget {
+    padding: 2.5rem 1.5rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .career-details-left-sidebar .single-widget {
+    padding: 2.5rem 1.5rem;
+  }
+  .career-details-left-sidebar .single-widget ul li span {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 767px) {
+  .career-details-left-sidebar {
+    margin-bottom: 5rem;
+  }
+}
+@media (max-width: 320px) {
+  .career-details-left-sidebar .single-widget ul li span {
+    font-size: 1.3rem;
+  }
+  .career-details-left-sidebar .single-widget {
+    padding: 2rem;
+  }
+}

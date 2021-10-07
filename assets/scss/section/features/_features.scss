@@ -1,0 +1,30 @@
+/*--------------------------
+20.features-area
+---------------------------*/
+.features-area {
+  .single-feature {
+    padding: 0 1rem;
+    margin-bottom: 3rem;
+    .feature-icon {
+      margin-bottom: 1.5rem;
+    }
+    h3 {
+      font-size: 2.4rem;
+      font-weight: 900;
+      text-transform: capitalize;
+      color: var(--color-one);
+      margin-bottom: 1.5rem;
+      a {
+        color: var(--color-one);
+        transition: $transition;
+        &:hover {
+          color: var(--hover-color-two);
+        }
+      }
+    }
+    p {
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+    }
+  }
+}

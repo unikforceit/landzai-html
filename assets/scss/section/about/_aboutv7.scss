@@ -1,0 +1,55 @@
+/*--------------------------
+about-seven-area
+---------------------------*/
+.about-seven-area {
+  background: #F9F9F9;
+  .about-feature {
+    .single-feature {
+      margin-top: 20px;
+      background: #FFFFFF;
+      box-shadow: 0px 25px 65px rgba(0, 0, 0, 0.05);
+      border-radius: 12px;
+      padding: 2rem;
+      .feature-icon {
+        width: 4rem;
+        height: 4rem;
+        line-height: 4.2rem;
+        border-radius: 50%;
+        background: #1F227D;
+        text-align: center;
+        color: var(--white);
+      }
+      h3 {
+        font-family: $titlefont;
+        font-size: 2rem;
+        font-weight: 700;
+        color: #222222;
+      }
+      p {
+        margin: 0;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        color: #777777;
+      }
+    }
+  }
+  .about-content {
+    margin-bottom: 12rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .about-seven-area .about-content {
+    margin-bottom: 6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-seven-area .about-feature .single-feature h3 {
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+  }
+  .about-seven-area .about-feature .single-feature .feature-icon {
+    display: none;
+  }
+}

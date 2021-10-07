@@ -1,0 +1,43 @@
+/*--------------------------
+24.section-bg
+---------------------------*/
+.section-bg {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  &:after {
+    position: absolute;
+    content: "";
+    width: 180px;
+    height: 155px;
+    background: url(../images/dot-red-shape.png) no-repeat;
+    right: 30px;
+    top: 50px;
+    z-index: 2;
+    animation: slideInUp 3s linear 1s infinite alternate both;
+  }
+  &:before {
+    position: absolute;
+    content: "";
+    width: 90%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    border-radius: 5rem;
+    background: var(--background-two);
+  }
+}
+
+.section-bg-two {
+  background: #fbf7ee;
+}
+.body-bg {
+  background: #fffbf2;
+}
+@media (max-width: 1500px) {
+  .section-bg:after {
+    display: none;
+  }
+}

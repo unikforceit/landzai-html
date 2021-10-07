@@ -1,0 +1,104 @@
+/*--------------------------
+55.wishlist
+---------------------------*/
+.wishlist-product-list {
+  .table {
+    border: 1px solid #eeeeee;
+    margin-bottom: 0;
+    thead {
+      border: 0;
+      tr {
+        th {
+          padding: 3rem 2rem;
+          border-bottom: 0;
+          font-family: $bodyFont;
+          font-size: 1.6rem;
+          font-weight: 700;
+          text-transform: capitalize;
+          color: #222222;
+          vertical-align: middle;
+          white-space: nowrap;
+        }
+      }
+    }
+    tbody {
+      tr {
+        td {
+          font-family: $bodyFont;
+          font-size: 1.6rem;
+          font-weight: 400;
+          text-transform: capitalize;
+          color: #666666;
+          padding: 3rem 2rem;
+          vertical-align: middle;
+          white-space: nowrap;
+          .single-prdocut {
+            .product-image {
+              width: 8rem;
+              height: 8rem;
+              img {
+                width: 80px;
+                height: 80px;
+                object-fit: cover;
+              }
+            }
+            .product-name {
+              font-size: 2rem;
+              font-weight: 700;
+              text-transform: capitalize;
+              color: #222222;
+              a {
+                color: #222222;
+                transition: $transition;
+                &:hover {
+                  color: var(--primary-color-five);
+                }
+              }
+            }
+            span {
+              display: block;
+              font-size: 1.6rem;
+              color: #666666;
+            }
+          }
+          .delet-item {
+            border: none;
+            padding: 0;
+            background: transparent;
+            color: #dc3545;
+          }
+          .cart-btn {
+            display: inline-block;
+            padding: .8rem 2rem;
+            background: var(--white);
+            font-size: 1.6rem;
+            font-weight: 400;
+            text-transform: capitalize;
+            color: var(--white);
+            background: var(--black);
+            transition: $transition;
+            &:hover {
+              color: var(--white);
+              background: var(--primary-color-five);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1199px) {
+  .wishlist-product-list .table tbody tr td .single-prdocut .product-image {
+    width: 6rem;
+    height: 6rem;
+  }
+  .wishlist-product-list .table tbody tr td .single-prdocut span {
+    font-size: 1.4rem;
+  }
+  .wishlist-product-list .table tbody tr td .single-prdocut {
+    width: 250px;
+  }
+  .wishlist-product-list .table tbody tr td .single-prdocut .product-name {
+    font-size: 1.6rem;
+  }
+}

@@ -1,0 +1,18 @@
+/*--------------------------
+about-five-area
+---------------------------*/
+.about-five-area {
+  .about-info {
+    p {
+      font-size: 1.5rem;
+      line-height: 2.6rem;
+      color: #4A4E73;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .about-five-area .about-info {
+    margin-top: 3rem;
+  }
+}

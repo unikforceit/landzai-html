@@ -1,0 +1,35 @@
+@keyframes trangle {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes round {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 1rem rgba(70, 67, 211, 0.4);
+  }
+  40% {
+    box-shadow: 0 0 0 0.2rem rgba(70, 67, 211, 0.4);
+  }
+  80% {
+    box-shadow: 0 0 0 0.8rem rgba(70, 67, 211, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 0 1rem rgba(70, 67, 211, 0.4);
+  }
+}

@@ -1,0 +1,21 @@
+/*--------------------------
+11.built-app-area 
+---------------------------*/
+.built-app-area  {
+    h2 {
+        margin-bottom: 1.9rem;
+        font-family: $titlefont;
+        font-size: 4.8rem;
+        line-height: 5.8rem;
+        font-weight: 700;
+        text-transform: capitalize;
+        color: var(--color-one);
+    }
+    p {
+        margin-bottom: 3rem;
+        font-family: $bodyFont;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        color: var(--bColor);
+    }
+}

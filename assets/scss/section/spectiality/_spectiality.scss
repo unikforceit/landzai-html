@@ -1,0 +1,136 @@
+/*--------------------------
+27.spectiality-area
+---------------------------*/
+.spectiality-area {
+  .spectiality-left {
+    .sinle-spectiality {
+      &:first-child {
+        &:after {
+          background: #86e2f1;
+        }
+        h3 {
+          &:before {
+            background: #86e2f1;
+          }
+        }
+      }
+      &:nth-child(2) {
+        &:after {
+          background: #b265e9;
+        }
+        h3 {
+          &:before {
+            background: #b265e9;
+          }
+        }
+      }
+      &:last-child {
+        &:after {
+          background: #f1d45c;
+        }
+        h3 {
+          &:before {
+            background: #f1d45c;
+          }
+        }
+      }
+      &:after {
+        left: 100%;
+      }
+    }
+  }
+  .spectiality-right {
+    .sinle-spectiality {
+      &:first-child {
+        &:after {
+          background: #496396;
+        }
+        h3 {
+          &:before {
+            background: #496396;
+          }
+        }
+      }
+      &:nth-child(2) {
+        &:after {
+          background: #ff6c62;
+        }
+        h3 {
+          &:before {
+            background: #ff6c62;
+          }
+        }
+      }
+      &:last-child {
+        &:after {
+          background: #0fbe7b;
+        }
+        h3 {
+          &:before {
+            background: #0fbe7b;
+          }
+        }
+      }
+      &:after {
+        right: 100%;
+      }
+    }
+  }
+  .spectiality-list {
+    margin: 0;
+    padding: 0;
+    .sinle-spectiality {
+      position: relative;
+      margin-bottom: 3rem;
+      list-style: none;
+      background: #fffbf2;
+      box-shadow: 0px 25px 65px rgba(0, 0, 0, 0.05);
+      border-radius: 2rem;
+      padding: 2.5rem 2rem 2.5rem 4.5rem;
+      &:after {
+        position: absolute;
+        content: "";
+        height: 1rem;
+        width: 62%;
+        background: var(--primary-color-two);
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: -1;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+      h3 {
+        position: relative;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        font-family: $titlefont;
+        font-size: 2.2rem;
+        font-weight: 700;
+        text-transform: capitalize;
+        &:before {
+          position: absolute;
+          content: " ";
+          width: 1.5rem;
+          height: 1.5rem;
+          line-height: 1.5rem;
+          border-radius: 50%;
+          background: var(--primary-color-two);
+          left: -2.5rem;
+          top: 0.6rem;
+        }
+      }
+      p {
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        color: var(--bColor);
+        margin: 0;
+      }
+    }
+  }
+}
+@media (max-width: 991px) {
+  .spectiality-area .spectiality-img {
+    margin: 3rem 0;
+  }
+}

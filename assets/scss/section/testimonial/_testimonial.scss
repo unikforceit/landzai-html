@@ -1,0 +1,109 @@
+/*--------------------------
+15.testimonial-area
+---------------------------*/
+.testimonial-area {
+  .slick-slider {
+    margin: 0 -15px;
+  }
+  .slick-slide {
+    padding-bottom: 4rem;
+    text-align: center;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  .slick-dots {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    text-align: center;
+    li {
+      display: inline-block;
+      margin: 0 0.5rem;
+      line-height: 1;
+      font-size: 0;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      border: 1px solid var(--black);
+      background: transparent;
+      transition: $transition;
+      &:hover {
+        background: var(--primary-color);
+        border-color: var(--primary-color);
+      }
+      &.slick-active {
+        background: var(--primary-color);
+        border-color: var(--primary-color);
+      }
+      button {
+        display: none;
+      }
+    }
+  }
+
+  .sigle-testimonial {
+    padding: 4rem 2.5rem;
+    background: #ffffff;
+    border-radius: 2rem;
+    @include primary-box-shadow-three();
+    .quote-iocn {
+      margin-bottom: 2.5rem;
+      i {
+        font-size: 4rem;
+        color: #0fbe7b;
+        opacity: 0.3;
+      }
+    }
+    .clint-image {
+      margin-bottom: 1.5rem;
+      padding-bottom: 2.5rem;
+      position: relative;
+      text-align: center;
+      &:before {
+        position: absolute;
+        content: "";
+        left: 0;
+        right: 0;
+        text-align: center;
+        bottom: 0;
+        width: 4rem;
+        height: 0.2rem;
+        background: #d6d6d6;
+        margin: auto;
+      }
+      img {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+        margin: auto;
+      }
+    }
+    p {
+      font-size: 2rem;
+      font-weight: 300;
+      color: var(--bColor);
+    }
+    .clinmg-info {
+      h4 {
+        margin-bottom: 0.5rem;
+        font-size: 1.8rem;
+        font-weight: 700;
+        text-transform: capitalize;
+        color: var(--color-one);
+        a {
+          color: var(--color-one);
+          transition: $transition;
+          &:hover {
+            color: var(--hover-color);
+          }
+        }
+      }
+      span {
+        font-size: 1.6rem;
+        font-weight: 500;
+        text-transform: capitalize;
+        color: var(--bColor);
+      }
+    }
+  }
+}

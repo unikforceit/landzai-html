@@ -1,0 +1,104 @@
+/*--------------------------
+feature-four-area
+---------------------------*/
+.feature-four-area {
+  background: #D4E3F4;
+  .single-feature {
+    .feature-info {
+      .featur-list-item {
+        margin: 0;
+        padding: 0;
+        li {
+          position: relative;
+          list-style: none;
+          font-size: 1.5rem;
+          font-weight: 400;
+          color: #4A4E73;
+          padding-left: 4rem;
+          margin-bottom: 2.5rem;
+          &::before {
+            @include flex-position(flex, center, center);
+            position: absolute;
+            content: "\f00c";
+            font-family: "Font Awesome 5 free";
+            font-weight: 900;
+            width: 3rem;
+            height: 3rem;
+            line-height: 1;
+            border-radius: 50%;
+            text-align: center;
+            background: rgba(56, 147, 255, 0.39);
+            color: #3893FF;
+            left: 0;
+            top: 0;
+          }
+        }
+      }
+      p {
+        font-size: 1.5rem;
+        line-height: 2.6rem;
+        font-weight: 400;
+        color: #4A4E73;
+      }
+    }
+    .app-btn {
+      display: inline-block;
+      margin-right: 15px;
+      &:hover {
+        .btn-text {
+          background: #3893FF;
+        }
+      }
+      .btn-text {
+        display: flex;
+        align-items: center;
+        width: 170px;
+        height: 52px;
+        background: #333333;
+        border-radius: 8px;
+        transition: $transition;
+        padding: 10px 15px;
+        span {
+          display: block;
+          margin-bottom: 2px;
+          font-family: $rubik;
+          font-size: 8px;
+          line-height: 1.3;
+          font-weight: 500;
+          text-transform: capitalize;
+          color: #ffffff;
+        }
+        h3 {
+          margin: 0;
+          font-family: $rubik;
+          font-size: 15px;
+          line-height: 1.3;
+          font-weight: 500;
+          color: #ffffff;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .feature-four-area .single-feature .app-btn {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 991px) {
+  .feature-four-area .single-feature .feature-image {
+    margin-bottom: 3rem;
+  }
+  .feature-four-area .single-feature .feature-info .featur-list-item {
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 414px) {
+  .feature-four-area .single-feature .app-btn {
+    margin-top: 15px;
+  }
+}
+

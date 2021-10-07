@@ -1,0 +1,38 @@
+/*-------------------------
+26.highlights-product
+--------------------------*/
+.highlights-product-area {
+  .highlights-product-info {
+    .section-title-three {
+      margin-bottom: 3rem;
+    }
+    .highlights-features {
+      margin: 0;
+      padding: 0;
+      li {
+        position: relative;
+        margin-bottom: 2rem;
+        padding-left: 3rem;
+        list-style: none;
+        font-size: 1.6rem;
+        font-weight: 300;
+        text-transform: capitalize;
+        color: var(--text-color-four);
+        &:before {
+          position: absolute;
+          content: " ";
+          width: 1.5rem;
+          height: 1.5rem;
+          line-height: 1.5rem;
+          border-radius: 50%;
+          background: var(--primary-color-two);
+          left: 0;
+          top: 0.5rem;
+        }
+      }
+    }
+    .primary-btn-three {
+      margin-top: 2.5rem;
+    }
+  }
+}

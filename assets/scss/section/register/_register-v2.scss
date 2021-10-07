@@ -1,0 +1,15 @@
+/*--------------------------
+42.register-area
+---------------------------*/
+@import "./register_form";
+.register-area-two {
+  background: url('../images/register-area-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 375px) {
+  .register-area-two .register-form-area .register-wrap {
+    padding: 3rem 1.5rem;
+  }
+}

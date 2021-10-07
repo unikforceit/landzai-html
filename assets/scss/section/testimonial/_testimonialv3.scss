@@ -1,0 +1,84 @@
+/*--------------------------
+testimonial-two-area
+---------------------------*/
+.testimonial-three-area {
+  .slick-slider {
+    margin: 0 -15px;
+  }
+  .slick-slide {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  .slick-dots {
+    margin: 0;
+    margin-top: 5rem;
+    padding: 0;
+    text-align: center;
+    line-height: 1;
+    li {
+      display: inline-block;
+      margin: 0 0.5rem;
+      line-height: 1;
+      font-size: 0;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: #d7d7d7;
+      transition: $transition;
+      cursor: pointer;
+      &:hover {
+        background: var(--primary-color-three);
+      }
+      &.slick-active {
+        background: var(--primary-color-three);
+      }
+      button {
+        display: none;
+      }
+    }
+  }
+  .single-testimonial {
+    .testimonial-content {
+      padding: 3.5rem 3rem;
+      background: #fffbf2;
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+      border-radius: 2rem;
+      margin-bottom: 2rem;
+      p {
+        margin: 0;
+        font-size: 2.2rem;
+        line-height: 3.2rem;
+        color: var(--color-one);
+      }
+    }
+    .clint-info {
+      .clint-img {
+        width: 6.5rem;
+        height: 6.5rem;
+        border-radius: 50%;
+      }
+      .clint-name {
+        margin: 0;
+        font-family: $titlefont;
+        font-size: 2.2rem;
+        text-transform: capitalize;
+        font-weight: 700;
+        color: var(--color-one);
+        a {
+          color: var(--color-one);
+          transition: $transition;
+          &:hover {
+            color: var(--primary-color-three);
+          }
+        }
+      }
+      span {
+        display: block;
+        font-size: 1.6rem;
+        text-transform: capitalize;
+        font-weight: 400;
+        color: var(--bColor);
+      }
+    }
+  }
+}

@@ -1,0 +1,155 @@
+/*--------------------------
+testimonial-two-area
+---------------------------*/
+.testimonial-two-area {
+  padding-bottom: 17.6rem;
+  .testimonial-slide-two {
+    position: relative;
+    @include primary-box-shadow-three();
+    border-radius: 2rem;
+    background: #ffffff;
+    .slick-arrow {
+      width: 3.5rem;
+      height: 2rem;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1;
+      font-size: 1.6rem;
+      cursor: pointer;
+      color: var(--primary-color-two);
+    }
+    .arow-prev {
+      left: -10rem;
+      @include flex-position(flex, flex-start, center);
+      &:after {
+        position: absolute;
+        content: "";
+        width: 90%;
+        height: 3px;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: var(--primary-color-two);
+      }
+    }
+    .arow-next {
+      right: -10rem;
+      text-align: right;
+      @include flex-position(flex, flex-end, center);
+      &:after {
+        position: absolute;
+        content: "";
+        width: 90%;
+        height: 3px;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: var(--primary-color-two);
+      }
+    }
+    .slick-dots {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0;
+      padding: 0;
+      margin-top: 4rem;
+      text-align: center;
+      line-height: 1;
+      li {
+        display: inline-block;
+        margin: 0 0.5rem;
+        line-height: 1;
+        font-size: 0;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        border: 1px solid var(--primary-color-two);
+        background: transparent;
+        transition: $transition;
+        &:hover {
+          background: var(--secondary-color-two);
+          border-color: var(--primary-color-two);
+        }
+        &.slick-active {
+          background: var(--secondary-color-two);
+          border-color: var(--primary-color-two);
+        }
+        button {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .sigle-testimonial {
+    padding: 4rem 12rem;
+    .quote-iocn {
+      margin-bottom: 2.5rem;
+      i {
+        font-size: 4rem;
+        color: var(--secondary-color-two);
+      }
+    }
+    .clint-image {
+      margin-bottom: 1.5rem;
+      padding-bottom: 2rem;
+      position: relative;
+      text-align: center;
+      &:before {
+        position: absolute;
+        content: "";
+        left: 0;
+        right: 0;
+        text-align: center;
+        bottom: 0;
+        width: 4rem;
+        height: 0.2rem;
+        background: #d6d6d6;
+        margin: auto;
+      }
+      img {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+        margin: auto;
+      }
+    }
+    p {
+      font-size: 2.4rem;
+      font-weight: 300;
+      line-height: 3.4rem;
+      color: var(--bColor);
+    }
+    .clinmg-info {
+      h4 {
+        margin-bottom: 0.5rem;
+        font-family: $titlefont;
+        font-size: 2.4rem;
+        font-weight: 700;
+        text-transform: capitalize;
+        color: var(--color-one);
+        a {
+          color: var(--color-one);
+          transition: $transition;
+          &:hover {
+            color: var(--hover-color);
+          }
+        }
+      }
+      span {
+        font-family: $titlefont;
+        font-size: 1.6rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        color: var(--bColor);
+      }
+    }
+  }
+}
+@media (max-width: 991px) {
+  .testimonial-two-area .testimonial-slide-two .slick-dots {
+    display: none !important;
+  }
+}

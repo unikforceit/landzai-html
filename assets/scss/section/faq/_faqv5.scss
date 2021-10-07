@@ -1,0 +1,83 @@
+/*--------------------------
+faq-five-area
+---------------------------*/
+
+.faq-five-area {
+  .faq-list {
+    .card {
+      border: none;
+      background: #FFFFFF;
+      box-shadow: 0px 25px 65px rgba(0, 0, 0, 0.05);
+      border-radius: 16px;
+      margin-bottom: 3rem;
+      padding: 1.5rem 3rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .card-header {
+        background: transparent;
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+        line-height: 1;
+        border-bottom: none;
+        button {
+          position: relative;
+          display: block;
+          width: 100%;
+          text-align: left;
+          font-family: $bodyFont;
+          font-size: 2rem;
+          font-weight: 700;
+          text-transform: capitalize;
+          color: var(--color-one);
+          text-decoration: none;
+          padding: 2.5rem 0;
+          padding-left: 3rem;
+          &.collapsed {
+            &::before {
+              transform: rotate(0);
+            }
+          }
+          &::before {
+            position: absolute;
+            content: "\f105";
+            font-family: "Font Awesome 5 free";
+            font-weight: 900;
+            left: 0;
+            top: 2.5rem;
+            transform: rotate(90deg);
+            transition: $transition;
+            color: #F5B35B;
+          }
+        }
+      }
+      .card-body {
+        padding: 0;
+        padding-left: 3rem;
+      }
+      p {
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 2.4rem;
+        color: var(--bColor);
+      }
+    }
+  }
+  .faq-img {
+    padding: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  .faq-five-area .faq-list .card {
+    padding: 1rem 1.5rem;
+  }
+  .faq-five-area .faq-list .card .card-header button {
+    font-size: 1.6rem;
+    padding: 1.5rem 0;
+    padding-left: 2rem;
+  }
+  .faq-five-area .faq-list .card .card-header button::before {
+    top: 1.7rem;
+  }
+}

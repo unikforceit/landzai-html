@@ -1,0 +1,11 @@
+.subbanner-area {
+    position: relative;
+    margin-top: -29rem;
+    z-index: 1;
+    .subbanner-img {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}

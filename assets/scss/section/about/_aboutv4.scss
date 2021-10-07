@@ -1,0 +1,63 @@
+/*--------------------------
+about-area-three
+---------------------------*/
+.about-four-area {
+  .single-about-info {
+    .about-content {
+      h2 {
+        margin-bottom: 2rem;
+        font-family: $rubik;
+        font-size: 3.6rem;
+        line-height: 4.6rem;
+        font-weight: 700;
+        color: #222222;
+      }
+      p {
+        margin-bottom: 3.5rem;
+        font-size: 1.6rem;
+        line-height: 2.8rem;
+        font-weight: 400;
+        color: #727272;
+      }
+      .view-btn {
+        display: inline-block;
+        font-size: 1.6rem;
+        font-weight: 600;
+        text-transform: capitalize;
+        line-height: 1;
+        color: #2896F7;
+        transition: $transition;
+        &:hover {
+          color: var(--hover-color-five);
+        }
+        i {
+          position: relative;
+          top: 1px;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1199px) {
+  .about-four-area .single-about-info .about-content h2 {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+}
+@media (max-width: 991px) {
+  .about-four-area .about-image {
+    margin-bottom: 3rem;
+  }
+  .about-four-area .about-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+@media (max-width: 375px) {
+  .about-four-area .single-about-info .about-content h2 {
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+  }
+}

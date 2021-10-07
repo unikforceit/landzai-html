@@ -1,0 +1,87 @@
+/*--------------------------
+39.counter-area
+---------------------------*/
+.counter-area {
+  margin-bottom: -125px;
+  .counter-list {
+    filter: drop-shadow(0px 20px 50px rgba(0, 0, 0, 0.05));
+  }
+  .single-counter {
+    @include flex-position(flex, center, center);
+    flex-direction: column;
+    width: 25%;
+    height: 255px;
+    background: var(--white);
+    h2 {
+      font-family: $rubik;
+      font-size: 3.6rem;
+      font-weight: 700;
+      color: #222222;
+    }
+    p {
+      margin: 0;
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: #666666;
+      text-transform: capitalize;
+    }
+    &:nth-child(even) {
+      background: #2896f7;
+      h2 {
+        color: var(--white);
+      }
+      p {
+        color: var(--white);
+      }
+    }
+  }
+}
+@media (max-width: 1199px) {
+  .counter-area .single-counter h2 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 991px) {
+  .counter-area {
+    margin-bottom: -75px;
+  }
+  .counter-area .single-counter {
+    height: 150px;
+  }
+  .requirement-process.section {
+    padding-top: 14rem;
+    padding-bottom: 5rem;
+  }
+  .requirement-process .top-arrow {
+    display: none;
+  }
+  .requirement-process .bottom-arrow {
+    display: none;
+  }
+  .requirement-process .single-requirement {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .counter-area .single-counter h2 {
+    font-size: 2rem;
+  }
+  .counter-area .single-counter p {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 480px) {
+  .counter-area .counter-list {
+    flex-flow: row wrap;
+  }
+  .counter-area .single-counter {
+    width: 50%;
+  }
+  .counter-area .single-counter:nth-child(1) {
+    order: 2;
+  }
+  .counter-area .single-counter:nth-child(4) {
+    order: 3;
+  }
+}

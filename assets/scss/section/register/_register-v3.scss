@@ -1,0 +1,25 @@
+/*--------------------------
+42.register-area
+---------------------------*/
+@import "./register_form";
+.register-area-v3 {
+  .register-form-area {
+    min-height: 615px;
+  }
+  .section-backgroun {
+    background: #F8F9FC;
+  }
+  .register-info {
+    padding: 3rem;
+  }
+}
+@media (max-width: 991px) {
+  .register-area-v3 .register-info {
+    display: none;
+  }
+}
+@media (max-width: 375px) {
+  .register-area-v3 .register-form-area .register-wrap {
+    padding: 3rem 1.5rem;
+  }
+}

@@ -1,0 +1,206 @@
+/*--------------------------
+12.price-table-area
+---------------------------*/
+.price-table-area {
+  background: var(--banner-bg-one);
+  position: relative;
+  z-index: 1;
+  .round-shape {
+    .round {
+      display: inline-block;
+      position: absolute;
+      width: 13px;
+      height: 13px;
+      line-height: 13px;
+      border-radius: 50%;
+      background: #f1d45c;
+      animation: round 3s linear infinite;
+      z-index: -1;
+      &:first-child {
+        top: 60%;
+        left: 6%;
+      }
+      &:nth-child(2) {
+        top: 150px;
+        left: 30%;
+      }
+      &:nth-child(3) {
+        bottom: 100px;
+        left: 50%;
+      }
+      &:nth-child(4) {
+        top: 150px;
+        right: 8%;
+      }
+      &:nth-child(5) {
+        bottom: 100px;
+        right: 10%;
+      }
+    }
+  }
+  .trangle-shape {
+    .trangle {
+      position: absolute;
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-top: 1.3rem solid var(--primary-color);
+      border-left: 1.3rem solid transparent;
+      border-right: 1.3rem solid transparent;
+      animation: trangle 5s linear 2s infinite alternate;
+      transform-origin: center;
+      z-index: -1;
+      &:first-child {
+        top: 150px;
+        left: 8%;
+      }
+      &:nth-child(2) {
+        bottom: 80px;
+        left: 6%;
+      }
+      &:nth-child(3) {
+        top: 100px;
+        left: 50%;
+      }
+      &:nth-child(4) {
+        bottom: 80px;
+        left: 42%;
+      }
+      &:nth-child(5) {
+        top: 50%;
+        right: 8%;
+      }
+    }
+  }
+}
+.single-price {
+  margin-bottom: 3rem;
+  padding: 3.5rem 2.5rem;
+  border-radius: 2rem;
+  background: var(--white);
+  @include primary-box-shadow;
+  overflow: hidden;
+  .price-header {
+    border-bottom: 1px solid var(--border-color-three);
+    .price {
+      margin: 0;
+      margin-bottom: 2rem;
+      font-family: $bodyFont;
+      font-size: 4rem;
+      font-weight: 900;
+      color: var(--color-one);
+      sub {
+        font-size: 1.4rem;
+        font-weight: 500;
+        text-transform: capitalize;
+        color: var(--text-color-three);
+        bottom: 0;
+      }
+    }
+    .package-name {
+      margin-bottom: 1rem;
+      font-size: 2.2rem;
+      font-weight: 600;
+      color: var(--color-one);
+      text-transform: capitalize;
+    }
+    .package-desc {
+      margin-bottom: 2rem;
+      font-size: 1.4rem;
+      line-height: 2.4rem;
+      color: var(--text-color-three);
+    }
+  }
+  .price-body {
+    padding: 2rem 0;
+    .feature-lsit {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li {
+        display: block;
+        position: relative;
+        margin-bottom: 2.5rem;
+        padding-left: 3.5rem;
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: var(--text-color-four);
+        text-transform: capitalize;
+        &:before {
+          position: absolute;
+          content: "\f103";
+          font-family: Flaticon;
+          width: 2.5rem;
+          height: 2.5rem;
+          line-height: 2.5rem;
+          border-radius: 50%;
+          background: var(--bg-color-five);
+          left: 0;
+          top: 0;
+          text-align: center;
+          font-size: 1.2rem;
+          color: var(--primary-color);
+        }
+      }
+    }
+  }
+  .primary-btn {
+    width: 100%;
+  }
+  &.active {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "recomended";
+      right: -4.5rem;
+      top: 2.5rem;
+      display: inline-block;
+      padding: 0.3rem 4rem;
+      background: var(--primary-color);
+      font-size: 1.3rem;
+      line-height: 1;
+      font-weight: 700;
+      text-transform: capitalize;
+      color: var(--white);
+      transform: rotate(45deg);
+    }
+    .primary-btn {
+      color: var(--white);
+      &:before {
+        width: 100%;
+      }
+    }
+  }
+}
+.primary-tab {
+  .nav-tabs {
+    justify-content: center;
+    border: none;
+    margin-bottom: 3rem;
+    .nav-item {
+      padding: 0;
+      margin: 0 2rem;
+      border: none;
+      .nav-link {
+        padding: 0;
+        margin: 0;
+        border: none;
+        background: transparent;
+        font-family: $bodyFont;
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: var(--color-one);
+        transition: $transition;
+        text-transform: capitalize;
+        border-bottom: 2px solid transparent;
+        &.active {
+          color: var(--primary-color);
+          border-bottom: 2px solid var(--primary-color);
+        }
+        &:hover {
+          color: var(--primary-color);
+        }
+      }
+    }
+  }
+}

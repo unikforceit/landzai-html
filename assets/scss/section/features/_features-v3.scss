@@ -1,0 +1,53 @@
+/*--------------------------
+features-area-three
+---------------------------*/
+.features-area-three {
+  .single-features {
+    margin-bottom: 3rem;
+    padding: 4rem 2.5rem 3.5rem 2.5rem;
+    background: var(--white);
+    box-shadow: 0px 25px 65px rgba(0, 0, 0, 0.05);
+    border-radius: 2rem;
+    .features-icon {
+      @include flex-position(flex, center, center);
+      width: 12rem;
+      height: 12rem;
+      line-height: 12rem;
+      border-radius: 50%;
+      background: var(--secondary-color-three);
+      text-align: center;
+      color: var(--white);
+      margin: auto;
+      margin-bottom: 3.2rem;
+      &.bg-two {
+        background: var(--primary-color-four);
+      }
+      i {
+        font-size: 4rem;
+      }
+    }
+    .features-info {
+      h3 {
+        margin-bottom: 1.7rem;
+        font-family: $rubik;
+        font-size: 2.4rem;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: var(--color-one);
+      }
+      p {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        color: var(--bColor);
+      }
+      .arrow-btn {
+        color: #c8c8c8;
+        font-size: 2rem;
+        transition: $transition;
+        &:hover {
+          color: var(--hover-color-four);
+        }
+      }
+    }
+  }
+}

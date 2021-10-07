@@ -1,0 +1,27 @@
+/*--------------------------
+21.about-area 
+---------------------------*/
+.about-area {
+  position: relative;
+  z-index: 1;
+  &:after {
+    position: absolute;
+    content: "";
+    width: 60%;
+    height: 100%;
+    right: 19rem;
+    top: 0;
+    background: var(--background-two);
+    border-radius: 5rem;
+    z-index: -1;
+  }
+  .about-content {
+    p {
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+      font-weight: 400;
+      color: var(--bColor);
+      margin: 1.5rem 0 3rem 0;
+    }
+  }
+}

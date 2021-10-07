@@ -1,0 +1,72 @@
+/*--------------------------
+about-area-three
+---------------------------*/
+.about-area-three {
+  position: relative;
+  background: #FFF7F6;
+  z-index: 1;
+  .ellipse1 {
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    animation: round 2s linear infinite alternate;
+    z-index: -1;
+  }
+  .ellipse2 {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    animation: trangle 7s linear 1.5s infinite ;
+    z-index: -1;
+  }
+  .ellipse3 {
+    position: absolute;
+    top: 55%;
+    left: 5%;
+    animation: round 5s linear infinite alternate;
+    z-index: -1;
+  }
+  .ellipse4 {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    animation: trangle 7s linear 2.5s infinite ;
+    z-index: -1;
+  }
+  .ellipse5 {
+    position: absolute;
+    top: 60%;
+    right: 5%;
+    animation: round 5s linear infinite alternate;
+    z-index: -1;
+  }
+  .ellipse6 {
+    position: absolute;
+    bottom: 10%;
+    left: 15%;
+    animation: trangle 7s linear 1.5s infinite ;
+    z-index: -1;
+  }
+  .ellipse7 {
+    position: absolute;
+    bottom: 10%;
+    right: 15%;
+    animation: trangle 7s linear 2s infinite ;
+    z-index: -1;
+  }
+  .about-info {
+    .section-title-four {
+      margin-bottom: 2.3rem;
+    }
+    p {
+      margin-top: 0;
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+      font-weight: 400;
+      color: var(--bColor);
+    }
+    .primary-btn-four {
+      margin-top: 1rem;
+    }
+  }
+}

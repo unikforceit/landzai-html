@@ -1,0 +1,105 @@
+/*--------------------------
+43.contact-area
+---------------------------*/
+.contact-top-v2 {
+  .contact-info-wrap {
+    .contact-box-list {
+      display: flex;
+      border-bottom: 1px solid #cccccc;
+      &:last-child {
+        margin-top: 3rem;
+        border: none;
+      }
+      li {
+        width: 50%;
+        margin-bottom: 3rem;
+        i {
+          margin-bottom: 1.5rem;
+          font-size: 3rem;
+          color: #222222;
+        }
+        h4 {
+          font-weight: 700;
+          font-size: 2rem;
+          color: #222222;
+        }
+        span {
+          display: block;
+          font-size: 1.6rem;
+          color: #666666;
+          line-height: 2.5rem;
+        }
+      }
+    }
+  }
+  .section-title-five {
+    .sub-title {
+      font-size: 1.4rem;
+      line-height: 2.2rem;
+      font-weight: 400;
+      color: #666666;
+    }
+  }
+}
+
+.contact-area-v2 {
+  .section-title-five {
+    .sub-title {
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: #666666;
+    }
+  }
+  .contact-wrap {
+    background: #f2f4ff;
+    padding: 2rem;
+    .contact-wrap-inner {
+      padding: 2.5rem;
+      background: #f8f9fc;
+    }
+  }
+  .map-area {
+    #gmap {
+      width: 100%;
+      height: 310px;
+      overflow: hidden;
+    }
+  }
+  .contact-form {
+    .contact-title {
+      margin-bottom: 2.8rem;
+      font-family: $bodyFont;
+      font-size: 2rem;
+      font-weight: 700;
+      text-transform: capitalize;
+      color: #222222;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .contact-top-v2 .contact-info-wrap {
+    margin-top: 5rem;
+  }
+  .contact-area-v2 .contact-form {
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-area-v2 .contact-wrap .contact-wrap-inner {
+    padding: 0;
+    background: transparent;
+  }
+}
+@media (max-width:375px) {
+  .contact-top-v2 .contact-info-wrap .contact-box-list {
+    flex-direction: column;
+  }
+  .contact-top-v2 .contact-info-wrap .contact-box-list li {
+    width: 100%;
+  }
+  .contact-area-v2 .map-area #gmap {
+    height: 250px;
+  }
+}

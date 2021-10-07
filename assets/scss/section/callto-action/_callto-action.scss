@@ -1,0 +1,92 @@
+/*--------------------------
+callto-action-area
+---------------------------*/
+.callto-action-area {
+  .callto-action-wrap {
+    position: relative;
+    padding: 6.5rem 2rem;
+    margin-bottom: -17rem;
+    background: var(--white);
+    box-shadow: 0px 25px 65px rgba(0, 0, 0, 0.05);
+    border-radius: 3rem;
+    text-align: center;
+    z-index: 5;
+    &:after {
+      position: absolute;
+      content: "";
+      width: 10rem;
+      height: 10rem;
+      background: transparent;
+      left: 0;
+      bottom: 0;
+      border-radius: 0 3rem 0 0;
+      border-right: 2.5rem solid var(--primary-color-two);
+      border-top: 2.5rem solid var(--primary-color-two);
+      animation: slideInRight 3s linear 1s infinite alternate both;
+      z-index: -1;
+    }
+    &:before {
+      position: absolute;
+      content: "";
+      width: 10rem;
+      height: 10rem;
+      background: transparent;
+      top: 0;
+      right: 0;
+      border-radius: 0 0 0 3rem;
+      border-left: 2.5rem solid var(--secondary-color-two);
+      border-bottom: 2.5rem solid var(--secondary-color-two);
+      animation: slideInLeft 3s linear 1s infinite alternate both;
+      z-index: -1;
+    }
+    h2 {
+      font-family: $titlefont;
+      font-size: 4.2rem;
+      font-weight: 700;
+      line-height: 5.7rem;
+      color: var(--color-one);
+    }
+    .section-divider {
+      display: inline-block;
+      width: 6rem;
+      height: 0.6rem;
+      background: var(--primary-color-two);
+      border-radius: 1rem;
+    }
+    .btn-lsit {
+      @include flex-position(flex, center, center);
+      margin-top: 2.5rem;
+      li {
+        margin: 0 1rem;
+      }
+      .callto-btn {
+        display: inline-block;
+        height: 5.2rem;
+        width: 17rem;
+        background: var(--primary-color-two);
+        font-size: 1.6rem;
+        font-weight: 700;
+        text-transform: capitalize;
+        color: var(--white);
+        border-radius: 5rem;
+        text-align: center;
+        @include flex-position(flex, center, center);
+        transition: $transition;
+        &.demo-btn {
+          background: var(--secondary-color-two);
+        }
+        &:hover {
+          background: var(--hover-color-two);
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .callto-action-area .callto-action-wrap:before {
+   display: none;
+  }
+  .callto-action-area .callto-action-wrap:after {
+   display: none;
+  }
+}

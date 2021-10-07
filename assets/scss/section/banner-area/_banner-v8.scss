@@ -1,0 +1,104 @@
+/*--------------------------
+banner-area-v8
+---------------------------*/
+.banner-area-v8 {
+  position: relative;
+  padding: 28rem 0 28rem 0;
+  background: radial-gradient(50.21% 66.95% at 50% 50%, #0C5FE7 0%, #1F227D 100%);
+  overflow: hidden;
+  .banner-info {
+    h2 {
+      margin-bottom: 3rem;
+      font-family: $titlefont;
+      font-size: 6rem;
+      line-height: 1;
+      font-weight: 800;
+      color: var(--white);
+    }
+    p {
+      margin-bottom: 3.5rem;
+      font-size: 1.8rem;
+      font-weight: 400;
+      line-height: 2.8rem;
+      color: #EAEAEA;
+    }
+    .banner-btn-list {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      li {
+        list-style: none;
+        margin-right: 2rem;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .banner-image {
+    position: absolute;
+    right: -10rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .banner-btn-list {
+    .primary-btn-eight {
+      margin-right: 20px;
+    }
+  }
+}
+
+
+@media (max-width: 1199px) {
+  .banner-area-v8 .banner-info h2 {
+    font-size: 4.5rem;
+    line-height: 5.5rem;
+  }
+  .banner-area-v8 .banner-image {
+    right: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .banner-area-v8 {
+    padding: 10rem 0;
+  }
+  .banner-area-v8 .banner-btn-list .primary-btn-eight {
+    padding: 1.3rem 2rem;
+    margin-right: 1rem;
+  }
+}
+@media (max-width: 767px) {
+  .banner-area-v8 .banner-image {
+    margin-top: 3rem;
+    position: inherit;
+    right: 0;
+    top: 0;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 575px) {
+  .banner-area-v8 {
+    padding: 6rem 0;
+  }
+}
+@media (max-width: 480px) {
+  .banner-area-v8 .banner-info h2 {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+}
+@media (max-width: 375px) {
+  .banner-area-v8 .banner-info h2 {
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+  }
+  .banner-area-v8 .banner-btn-list .primary-btn-eight {
+    display: block;
+    margin-right: 0;
+    margin-top: 10px;
+  }
+  .banner-area-v8 .banner-info .banner-btn-list {
+    flex-direction: column;
+  }
+}

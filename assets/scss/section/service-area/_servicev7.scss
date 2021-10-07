@@ -1,0 +1,52 @@
+/*--------------------------
+service-area-eight
+---------------------------*/
+.service-area-eight {
+  background: radial-gradient(50.21% 66.95% at 50% 50%, #0C5FE7 0%, #1F227D 100%);
+  .single-serive {
+    position: relative;
+    margin-bottom: 3rem;
+    margin-top: 45px;
+    padding: 7rem 3rem 4rem 3rem;
+    background: #FFFFFF;
+    box-shadow: 0px 25px 65px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    .service-icon {
+      width: 9rem;
+      height: 9rem;
+      position: absolute;
+      top: -45px;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+    h3 {
+      margin-bottom: 1.5rem;
+      font-family: $titlefont;
+      font-size: 2.4rem;
+      line-height: 3.2rem;
+      font-weight: 700;
+      color: #222222;
+    }
+    p {
+      margin: 0;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      font-weight: 400;
+      color: #777777;
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .service-area-eight .single-serive h3 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}
+@media (max-width: 414px) {
+  .service-area-eight .single-serive h3 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}

@@ -1,0 +1,57 @@
+/*--------------------------
+56.error-page
+---------------------------*/
+.error-page {
+    @include flex-position(flex, center, center);
+    padding: 3rem 1.5rem;
+    min-height: 100vh;
+    .error-page-wrap {
+        text-align: center;
+        .error-code {
+            margin-bottom: 1rem;
+            font-size: 20rem;
+            line-height: 1;
+        }
+        .error-text {
+            margin-bottom: 4rem;
+            font-size: 2.6rem;
+            line-height: 3.6rem;
+        }
+        .back-home-btn {
+            display: inline-block;
+            padding: 1.3rem 2.5rem;
+            border-radius: 8px;
+            font-size: 1.6rem;
+            font-weight: 700;
+            background: var(--primary-color);
+            color: var(--white);
+            text-transform: capitalize;
+            transition: $transition;
+            text-align: center;
+        }
+    }
+}
+@media (max-width: 575px) {
+    .error-page .error-page-wrap .error-code {
+        font-size: 14rem;
+    }
+    .error-page .error-page-wrap .error-text {
+        margin-bottom: 3rem;
+        font-size: 2.2rem;
+        line-height: 3rem;
+    }
+    .error-page .error-page-wrap .back-home-btn {
+        padding: .8rem 1.5rem;
+        font-size: 1.3rem;
+    }
+}
+@media (max-width: 375px) {
+    .error-page .error-page-wrap .error-code {
+        font-size: 10rem;
+    }
+    .error-page .error-page-wrap .error-text {
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+}

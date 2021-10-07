@@ -1,0 +1,46 @@
+/*--------------------------
+callto-action-threen-two
+---------------------------*/
+.callto-action-three {
+  margin-top: 9rem;
+  position: relative;
+  padding: 7rem 0 0 0;
+  background: radial-gradient(50.21% 66.95% at 50% 50%, #0C5FE7 0%, #1F227D 100%);
+  .callto-btn-list {
+    .primary-btn-eight {
+      margin-right: 2rem;
+    }
+  }
+  .callto-action-content {
+    margin-bottom: 7rem;
+  }
+  .callto-action-image {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .callto-action-three {
+    margin-top: 0;
+  }
+  .callto-action-three .callto-action-image {
+    position: inherit;
+  }
+  .callto-action-three .callto-action-content {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .callto-action-three .callto-btn-list .primary-btn-eight {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 400px) {
+  .callto-action-three .callto-btn-list .primary-btn-eight {
+    margin-right: 0;
+    margin-top: 10px;
+    display: block;
+  }
+}

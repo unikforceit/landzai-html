@@ -1,0 +1,122 @@
+/*--------------------------
+banner-area-v4
+---------------------------*/
+.banner-area-v5 {
+  position: relative;
+  padding: 28rem 0 23rem 0;
+  background: url("../images/banner-bg-v5.png") no-repeat center / cover;
+  overflow: hidden;
+  .banner-info {
+    .banner-notis {
+      margin-bottom: 2.5rem;
+      span {
+        display: inline-block;
+        padding: 8px 1.5rem;
+        background: #E3E9F9;
+        font-size: 1.4rem;
+        line-height: 1;
+        font-weight: 500;
+        text-transform: capitalize;
+        color: #4F4F4F;
+        border-radius: 2.5rem;
+      }
+    }
+    .banner-title {
+      margin-bottom: 2rem;
+      font-family: $rubik;
+      font-size: 6.4rem;
+      font-weight: 700;
+      color: #4F4F4F;
+    }
+    .banner-content {
+      margin-bottom: 3.5rem;
+      font-size: 1.6rem;
+      line-height: 2.8rem;
+      font-weight: 400;
+      color: #727272
+    }
+    .demo-btn {
+      display: inline-block;
+      padding: 1.1rem 2.5rem;
+      background: var(--primary-color-five);
+      font-size: 1.4rem;
+      font-weight: 600;
+      text-transform: capitalize;
+      color: var(--white);
+      border-radius: 2.6rem;
+      margin-right: 2rem;
+      transition: $transition;
+      min-width: 186px;
+      text-align: center;
+      &:hover {
+        color: var(--white);
+        background: var(--hover-color-five);
+      }
+    }
+    .pricing-btn {
+      display: inline-block;
+      padding: 1rem 2.5rem;
+      font-size: 1.4rem;
+      font-weight: 600;
+      text-transform: capitalize;
+      color: #727272;
+      border-radius: 2.6rem;
+      margin-right: 2rem;
+      transition: $transition;
+      border: 1px solid var(--primary-color-five);
+      min-width: 186px;
+      text-align: center;
+      &:hover {
+        color: var(--white);
+        background: var(--primary-color-five);
+      }
+    }
+  }
+  .banner-image {
+    position: absolute;
+    right: -10rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@media (max-width: 1199px) {
+  .banner-area-v5 .banner-info .banner-title {
+    font-size: 5rem;
+  }
+  .banner-area-v5 .banner-image {
+    right: 0;
+  }
+}
+@media (max-width: 991px) {
+  .banner-area-v5 {
+    padding: 10rem 0 10rem 0;
+  }
+  .banner-area-v5 .banner-info .banner-title {
+    font-size: 4rem;
+  }
+  .banner-area-v5 .banner-info .demo-btn {
+    margin-right: 1rem;
+  }
+  .banner-area-v5 .banner-info .demo-btn {
+    min-width: 120px;
+  }
+  .banner-area-v5 .banner-info .pricing-btn {
+    min-width: 120px;
+  }
+}
+@media (max-width: 767px) {
+  .banner-area-v5 .banner-image {
+    margin-top: 3rem;
+    position: inherit;
+    transform: translateY(0);
+  }
+  .banner-area-v5 {
+    padding: 6rem 0;
+  }
+}
+@media (max-width: 375px) {
+  .banner-area-v5 .banner-info .banner-title {
+    font-size: 3rem;
+  }
+}

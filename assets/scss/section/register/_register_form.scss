@@ -1,0 +1,179 @@
+/*--------------------------
+register-form-area
+---------------------------*/
+.register-form-area {
+  background: var(--white);
+  &.border {
+    border: 1px solid #cccccc;
+  }
+  &.shadow {
+    box-shadow: 0px 15px 60px rgba(199, 199, 199, 0.15);
+  }
+  .nav-tabs {
+    border-bottom: 1px solid #f2f4ff;
+    .nav-item {
+      margin-bottom: -1px;
+      width: 50%;
+      .nav-link {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border: 0;
+        padding: 0;
+        text-align: center;
+        font-family: $bodyFont;
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: #666666;
+        text-transform: capitalize;
+        padding: 1.7rem 0.5rem;
+        border-radius: 0;
+        border-bottom: 1px solid transparent;
+        &.active {
+          border-bottom: 1px solid #0c5fe7;
+          color: #222222;
+          background: transparent;
+        }
+      }
+    }
+  }
+  .register-wrap {
+    padding: 3.5rem;
+  }
+  .register-form {
+    .form-group {
+      position: relative;
+      margin-bottom: 2rem;
+      .form-control {
+        width: 100%;
+        border: 1px solid #cccccc;
+        border-radius: 0.5rem;
+        height: 4.5rem;
+        font-family: $bodyFont;
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: #222222;
+        padding: 2rem;
+      }
+      .icon {
+        position: absolute;
+        right: 1.5rem;
+        top: 1.6rem;
+        cursor: pointer;
+      }
+    }
+    .form-check {
+      .form-check-input {
+        top: 3px;
+      }
+      .form-check-label {
+        padding-left: 1rem;
+        font-family: $bodyFont;
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: #666666;
+        cursor: pointer;
+        a {
+          color: #2896f7;
+          transition: $transition;
+          &:hover {
+            color: var(--hover-color-five);
+          }
+        }
+      }
+    }
+    .submit-btn {
+      display: block;
+      width: 100%;
+      border: 0;
+      padding: 1rem 2rem;
+      background: #2896f7;
+      border-radius: 0.6rem;
+      font-family: $bodyFont;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--white);
+      transition: $transition;
+      &:hover {
+        color: var(--white);
+        background: var(--hover-color-five);
+      }
+    }
+    .forget-password {
+      display: block;
+      margin-bottom: 1.5rem;
+      font-family: $bodyFont;
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: #666666;
+      transition: $transition;
+      &:hover {
+        color: var(--primary-color-five);
+      }
+    }
+  }
+  .tab-register {
+    margin-top: 2rem;
+    p {
+      font-family: $bodyFont;
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: #666666;
+      a {
+        display: inline-block;
+        margin: 0 0.5rem;
+        color: var(--primary-color-five);
+        transition: $transition;
+        font-weight: 700;
+        &:hover {
+          color: var(--hover-color-five);
+        }
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .otehr-option {
+      position: relative;
+      z-index: 1;
+      &:before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 1px;
+        background: #cccccc;
+        left: 0;
+        top: 12px;
+        z-index: -1;
+      }
+      span {
+        background: var(--white);
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: #666666;
+        padding: 0 1.5rem;
+      }
+    }
+    .google-regiter {
+      margin: 1.5rem 0;
+      @include flex-position(flex, center, center);
+      width: 100%;
+      height: 46px;
+      border: 1px solid #cccccc;
+      border-radius: 0.5rem;
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: #666666;
+      text-transform: capitalize;
+      transition: $transition;
+      img {
+        margin-right: 1rem;
+      }
+      &:hover {
+        color: var(--white);
+        background: var(--hover-color-five);
+      }
+    }
+  }
+}
+

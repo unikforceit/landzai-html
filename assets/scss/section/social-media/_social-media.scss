@@ -1,0 +1,29 @@
+/*----------------------------
+ 5.social-media-style
+-----------------------------*/
+.social-media {
+  display: flex;
+  li {
+    margin-right: 2rem;
+    &:last-child {
+      margin-right: 0;
+    }
+    a {
+      display: inline-block;
+      width: 4rem;
+      height: 4rem;
+      line-height: 4rem;
+      background: var(--white);
+      text-align: center;
+      @include primary-box-shadow;
+      border-radius: 50%;
+      color: var(--primary-color);
+      font-size: 2rem;
+      transition: $transition;
+      &:hover {
+        background: var(--primary-color);
+        color: var(--white);
+      }
+    }
+  }
+}

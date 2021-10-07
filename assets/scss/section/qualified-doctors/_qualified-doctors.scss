@@ -1,0 +1,107 @@
+/*--------------------------
+53.qualified-doctors
+---------------------------*/
+.qualified-doctors-area {
+     background: linear-gradient(180deg, #F7FBFF 0%, #F7FBFF 100%);
+     overflow: hidden;
+     .qualified-content {
+          p {
+               font-size: 1.5rem;
+               font-weight: 400;
+               line-height: 2.6rem;
+               color: #4A4E73;
+          }
+     }
+     .doctors-list-slide-wrap {
+          .slick-slide {
+               margin: 10px 0;
+          }
+          .single-doctor {
+               .doctor-info-wrap {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    padding: 3.5rem 2.5rem;
+                    width: 255px;
+                    height: 288px;
+                    background: linear-gradient(90deg, rgba(221, 241, 246, 0) 0%, rgba(221, 241, 246, 0.78) 0.01%, rgba(247, 232, 220, 0.14) 63.3%);
+                    border: 2px solid rgba(209, 229, 250, 0.47);
+                    box-sizing: border-box;
+                    border-radius: 13px;
+               }
+               .doctor-image {
+                    margin-bottom: 2rem;
+                    img {
+                         width: 60px;
+                         height: 60px;
+                         border-radius: 10px;
+                    }
+               }
+               .doctor-name {
+                    font-family: $bodyFont;
+                    font-size: 2rem;
+                    font-weight: 700;
+                    text-transform: capitalize;
+                    color: #4A4E73;
+               }
+               .doctor-cagatory {
+                    font-family: $bodyFont;
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    color: #4A4E73;
+               }
+               .qualification-info {
+                    p {
+                         font-family: $bodyFont;
+                         font-size: 1.5rem;
+                         line-height: 1.5;
+                         font-weight: 500;
+                         color: #4A4E73;
+                    }
+               }
+               p {
+                    margin: 0;
+               }
+          }
+     }
+}
+
+@media (max-width: 1199px) {
+     .doctors-list-slide-two {
+          display: none;
+     }
+}
+@media (max-width: 991px) {
+     .doctors-list-slide-two {
+          display: block;
+     }
+     .doctors-list-slide.slick-initialized.slick-slider.slick-vertical {
+          width: 50%;
+     }
+     .doctors-list-slide-two.slick-initialized.slick-slider.slick-vertical {
+          width: 50%;
+     }
+     .qualified-doctors-area {
+          padding-top: 6rem;
+     }
+     .doctors-list-slide-wrap {
+          margin-top: 60px;
+     }
+}
+@media (max-width: 767px) {
+     .doctors-list-slide.slick-initialized.slick-slider.slick-vertical {
+          width: 50%;
+          margin-right: 10px;
+     }
+}
+@media (max-width: 480px) {
+     .doctors-list-slide.slick-initialized.slick-slider.slick-vertical {
+          width: 100%;
+     }
+     .doctors-list-slide-two.slick-initialized.slick-slider.slick-vertical {
+          display: none;
+     }
+     .qualified-doctors-area .doctors-list-slide-wrap .single-doctor .doctor-info-wrap {
+          margin: auto;
+     }
+}

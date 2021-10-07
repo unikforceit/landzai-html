@@ -1,0 +1,55 @@
+/*--------------------------
+service-area-seven
+---------------------------*/
+.service-area-seven {
+  background: #F6F2E9;
+  .service-info-wrap {
+    p {
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+      color: #777777;
+    }
+  }
+  .blockquote-area {
+    border-left: 1px solid #D69F6D;
+    padding-left: 20px;
+    p {
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+      color: #777777;
+    }
+  }
+  .sigle-service {
+    margin-bottom: 3rem;
+    background: var(--white);
+    border-radius: 15px;
+    padding: 3.5rem 1.5rem;
+    .service-icon {
+      @include flex-position(flex, center, center);
+      margin: auto;
+      margin-bottom: 3rem;
+      padding: 10px;
+      width: 8rem;
+      height: 8rem;
+      border-radius: 50%;
+      background: #FFE8D2;
+    }
+    h3 {
+      font-family: $PTSerif ;
+      font-size: 2.4rem;
+      color: #131212;
+    }
+    p {
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+      color: #777777;
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .service-area-seven .service-info-wrap {
+    margin-bottom: 3rem;
+  }
+}

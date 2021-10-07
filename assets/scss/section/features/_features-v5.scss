@@ -1,0 +1,42 @@
+/*--------------------------
+feature-five-area
+---------------------------*/
+.feature-five-area {
+  .feature-list {
+    margin-top: 3rem;
+    border-top: 1px solid #E3E3E3;
+    .single-feature {
+      margin-top: 3rem;
+      .media-body {
+        h4 {
+          font-family: $titlefont;
+          font-size: 2rem;
+          color: #222222;
+        }
+        p {
+          font-size: 1.4rem;
+          line-height: 2.4rem;
+          color: #777777;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1199px) {
+  .feature-five-area .feature-list .single-feature .media-body h4 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .feature-five-area .feature-imamge {
+    margin-top: 3rem;
+  }
+}
+@media (max-width: 480px) {
+  .feature-five-area .feature-list .single-feature img {
+    width: 50px;
+  }
+}

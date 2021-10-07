@@ -1,0 +1,65 @@
+/*--------------------------
+7.brands-area
+---------------------------*/
+.brands-area {
+  margin-top: 18rem;
+  &.mt-50 {
+    margin-top: 5rem;
+  }
+  .brand-list {
+    padding: 3rem 0 2.5rem 0;
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+    .single-brand {
+      text-align: center;
+      a {
+        display: inline-block;
+      }
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+/*--------------------------
+brands-list-area
+---------------------------*/
+.brands-list-area {
+  padding: 3rem 0 2.5rem 0;
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+  .brand-list {
+    .single-brand {
+      text-align: center;
+      a {
+        display: inline-block;
+      }
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+@media (max-width: 1199px) {
+  .brands-area {
+    margin-top: 12rem;
+  }
+}
+@media (max-width: 991px) {
+  .brands-area {
+    margin-top: 6rem;
+  }
+  .brands-area.mt-50 {
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  .brands-area {
+    margin-top: 5rem;
+  }
+  .brands-area.mt-50 {
+    margin-top: 1.8rem;
+  }
+}

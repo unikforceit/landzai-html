@@ -1,0 +1,78 @@
+/*--------------------------
+banner-area-v4
+---------------------------*/
+.banner-area-v7 {
+  padding: 26.5rem 0 20rem 0;
+  background: #F6F2E9;
+  .banner-info {
+    position: relative;
+    z-index: 2;
+    .banner-title {
+      margin-bottom: 2rem;
+      font-family: $PTSerif ;
+      font-size: 7.8rem;
+      line-height: 9.2rem;
+      font-weight: 700;
+      text-transform: capitalize;
+      color: #131313;
+    }
+    .banner-content {
+      margin-bottom: 3.5rem;
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 3rem;
+      color: #333333;
+      width: 70%;
+    }
+  }
+  .banner-image {
+    position: relative;
+    left: -85px;
+    z-index: 1;
+    img {
+      transform: scale(1.3);
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .banner-area-v7 .banner-info .banner-title {
+    font-size: 6rem;
+    line-height: 7rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .banner-area-v7 .banner-image {
+    left: 0;
+  }
+  .banner-area-v7 .banner-info .banner-title {
+    font-size: 4.5rem;
+    line-height: 5.5rem;
+  }
+  .banner-area-v7 .banner-image img {
+    transform: scale(1);
+  }
+  .banner-area-v7 {
+    padding: 11rem 0 12rem 0;
+  }
+  .banner-area-v7 .banner-info .banner-content {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .banner-area-v7 .banner-image {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 575px) {
+  .banner-area-v7 {
+    padding: 5rem 0 6rem 0 ;
+  }
+  .banner-area-v7 .banner-info .banner-title {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+}
